@@ -20,32 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b6257e1-41fa-4dcc-a915-cba3c9691669" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/_ingredients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/_main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/footer.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/header.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Ingredients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Trace1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Trace1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/background@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cabbage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/salad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cabbage@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/salad@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +93,7 @@
       <updated>1678112835423</updated>
       <workItem from="1678112836576" duration="652000" />
       <workItem from="1679047352426" duration="5872000" />
-      <workItem from="1679066574703" duration="20810000" />
+      <workItem from="1679066574703" duration="21107000" />
     </task>
     <task id="LOCAL-00001" summary="start...">
       <created>1679053176847</created>
@@ -127,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679053176847</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add styles (header, main), add in ingredients dynamics card">
+      <created>1679091713699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679091713699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +130,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start..." />
-    <option name="LAST_COMMIT_MESSAGE" value="start..." />
+    <MESSAGE value="add styles (header, main), add in ingredients dynamics card" />
+    <option name="LAST_COMMIT_MESSAGE" value="add styles (header, main), add in ingredients dynamics card" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1679070351342">
@@ -197,10 +180,11 @@
     </state>
     <state x="210" y="46" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1679054673469" />
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1678113140041" />
-    <state x="283" y="124" key="Vcs.Push.Dialog.v2" timestamp="1679053180528">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="298" y="145" key="Vcs.Push.Dialog.v2" timestamp="1679091731268">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1679053180528" />
+    <state x="298" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1679091731268" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1679071118201">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
