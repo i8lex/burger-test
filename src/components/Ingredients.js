@@ -1,17 +1,19 @@
 import React from "react";
 import { ingredients } from "../data/data";
 
-const Card = ({ name, image }) => {
+const Card = ({ name, image, maxWidth }) => {
+  console.log(maxWidth);
   return (
     <div className="ingredients__box__card">
       <div className="ingredients__image-box">
         <img
+          style={{ maxWidth: maxWidth }}
           src={image}
           alt={name[0].toUpperCase() + name.slice(1)}
-          className="ingredients__image"
+          className="ingredients__image-box__image"
         />
       </div>
-      <h5 className="ingredints__box__title">
+      <h5 className="ingredients__box__card-title">
         {name[0].toUpperCase() + name.slice(1)}
       </h5>
     </div>
@@ -19,7 +21,6 @@ const Card = ({ name, image }) => {
 };
 
 export const Ingredients = () => {
-  console.log(Object.values(ingredients));
   return (
     <section className="ingredients">
       <div className="container">
@@ -30,8 +31,15 @@ export const Ingredients = () => {
             mollis id arcu vel maximus.
           </h6>
           <div className="ingredients__box">
-            {Object.values(ingredients).map(({ name, image }) => {
-              return <Card key={name} name={name} image={image} />;
+            {Object.values(ingredients).map(({ name, image2x, maxWidth }) => {
+              return (
+                <Card
+                  key={name}
+                  name={name}
+                  image={image2x}
+                  maxWidth={maxWidth}
+                />
+              );
             })}
           </div>
           <p className="ingredients__text">

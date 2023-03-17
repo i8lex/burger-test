@@ -9,7 +9,23 @@ $line-height: 30px;
   justify-content: center;
 }
 
-@mixin textProp ($font-size, $line-height, $fontweight) {
+@mixin button-order {
+  padding: 9px 29px 6px 33px;
+  max-width: 161px;
+  width: 100%;
+  background: #00B3FA;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #2A2A2A;
+}
+
+@mixin textProp ($font-size, $line-height, $font-weight) {
   font-family: 'Poppins', sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;

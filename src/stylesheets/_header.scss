@@ -1,3 +1,5 @@
+@import "mixins";
+
 
 .header {
   //margin: 0 auto;
@@ -23,37 +25,21 @@
     margin-left: 102px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 70px
   }
 
   &__link {
-    margin-left: 70px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0;
     color: #2A2A2A;
-
-    &:first-child {
-      margin-left: 0;
-    }
   }
 
   &__button {
     margin-left: 329px;
-    padding: 9px 29px 6px 33px;
-    max-width: 161px;
-    width: 100%;
-    background: #00B3FA;
-    border-radius: 10px;
-    border: none;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    //line-height: 27px;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 0;
-    color: #2A2A2A;
+    @include button-order;
   }
 }

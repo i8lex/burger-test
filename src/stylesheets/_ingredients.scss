@@ -26,15 +26,40 @@
 
   &__box {
     display: flex;
+    gap: 52px;
+    margin-bottom: 50px;
 
-  &__card {
+    &__card-title {
+      @include textProp(18px, 27px, 700);
+      //padding-bottom: 20px;
+    }
+
+    &__card {
+      @include flex-column-center;
+      justify-content: space-between;
+      padding: 20px 0;
+      gap: 20px;
+      width: 229px;
+      background: #FFFFFF 0 0 no-repeat padding-box;
+      box-shadow: 0 3px 6px #00000029;
+      border-radius: 26px;
+    }
+
+
 
   }
 
+  &__image-box {
+    display: flex;
+
+    &__image {
+      max-width: 194px;
+      object-fit: cover;
+    }
   }
 
   &__text {
-    @include text;
+    @include textProp(18px, 27px, normal);
     text-align: center;
   }
 }

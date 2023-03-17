@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b6257e1-41fa-4dcc-a915-cba3c9691669" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ingredients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ingredients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_ingredients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_ingredients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/stylesheets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -64,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/stylesheets" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -93,7 +102,7 @@
       <updated>1678112835423</updated>
       <workItem from="1678112836576" duration="652000" />
       <workItem from="1679047352426" duration="5872000" />
-      <workItem from="1679066574703" duration="21107000" />
+      <workItem from="1679066574703" duration="24569000" />
     </task>
     <task id="LOCAL-00001" summary="start...">
       <created>1679053176847</created>
@@ -109,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679091713699</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add styles (header, main), add in ingredients dynamics card">
+      <created>1679091771766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679091771766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,37 +170,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="584" y="354" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1678113295929" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1679088743348">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1679093424500">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1679088743348" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1679079127949" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1679088743346">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1679092879055" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1679093424500" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1679093424497">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1679088743346" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1679079127947" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1679088743345">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1679092879053" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1679093424497" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1679093424496">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.820@0.0.1440.900" timestamp="1679077577282" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1679088743345" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1679079127946" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1679088743347">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1679092879052" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1679093424496" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1679093424499">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1679088743347" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1679079127948" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1679092879054" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1679093424499" />
     <state x="210" y="46" key="SettingsEditor" timestamp="1679054673469">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="210" y="46" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1679054673469" />
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1678113140041" />
-    <state x="298" y="145" key="Vcs.Push.Dialog.v2" timestamp="1679091731268">
+    <state x="298" y="145" key="Vcs.Push.Dialog.v2" timestamp="1679091777398">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1679053180528" />
-    <state x="298" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1679091731268" />
+    <state x="298" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1679091777398" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1679071118201">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

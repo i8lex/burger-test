@@ -28,22 +28,26 @@ export const ingredients = {
     name: "buns",
     image: require("../images/bun.png"),
     image2x: require("../images/bun@2x.png"),
+    maxWidth: "194px",
   },
 
   salad: {
     name: "salad",
     image: require("../images/salad.png"),
     image2x: require("../images/salad@2x.png"),
+    maxWidth: "152px",
   },
 
   tomato: {
     name: "tomato",
     image: require("../images/tomato.png"),
     image2x: require("../images/tomato@2x.png"),
+    maxWidth: "138px",
   },
   cheese: {
     name: "cheese",
     image: require("../images/cheese.png"),
     image2x: require("../images/cheese@2x.png"),
+    maxWidth: "138px",
   },
 };

@@ -19,18 +19,16 @@
   margin-left: 102px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 70px;
 }
 .header__link {
-  margin-left: 70px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0;
   color: #2A2A2A;
-}
-.header__link:first-child {
-  margin-left: 0;
 }
 .header__button {
   margin-left: 329px;
@@ -64,6 +62,7 @@
 .main__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 67px;
   padding-top: 49px;
 }
 .main__box {
@@ -75,7 +74,7 @@
 .main__title {
   font-family: "Poppins", sans-serif;
   font-size: 84px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 125px;
   font-style: normal;
   letter-spacing: 0;
@@ -85,7 +84,7 @@
 .main__text {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 35px;
   font-style: normal;
   letter-spacing: 0;
@@ -99,14 +98,13 @@
   border: none;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 27px;
   font-style: normal;
   letter-spacing: 0;
   color: #2A2A2A;
 }
 .main__logo {
-  margin-left: 67px;
   display: flex;
 }
 .main__logo__image {
@@ -143,7 +141,7 @@
 .ingredients__title__text {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 35px;
   font-style: normal;
   letter-spacing: 0;
@@ -154,13 +152,44 @@
 }
 .ingredients__box {
   display: flex;
+  gap: 52px;
+  margin-bottom: 50px;
+}
+.ingredients__box__card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  font-style: normal;
+  letter-spacing: 0;
+  color: #2A2A2A;
+}
+.ingredients__box__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  gap: 20px;
+  width: 229px;
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 26px;
+}
+.ingredients__image-box {
+  display: flex;
+}
+.ingredients__image-box__image {
+  max-width: 194px;
+  object-fit: cover;
 }
 .ingredients__text {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
+  font-weight: normal;
   line-height: 27px;
+  font-style: normal;
   letter-spacing: 0;
   color: #2A2A2A;
   text-align: center;

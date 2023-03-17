@@ -16,6 +16,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 67px;
     padding-top: 49px;
   }
 
@@ -45,7 +46,6 @@
   }
 
   &__logo {
-    margin-left: 67px;
     display: flex;
     &__image {
       max-width: 625px;
