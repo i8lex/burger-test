@@ -1,0 +1,10 @@
+@import "stylesheets/reset.css";
+@import "stylesheets/mixins";
+@import "stylesheets/header";
+@import "stylesheets/main";
+@import "stylesheets/_ingredients";
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+}
