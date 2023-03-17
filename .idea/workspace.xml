@@ -20,13 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b6257e1-41fa-4dcc-a915-cba3c9691669" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Burgers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Ingredients.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Story.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo_header@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Groupe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Groupe1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Groupe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Groupe2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Rectangle 10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Rectangle 10@2x.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +68,7 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -73,8 +95,16 @@
       <option name="presentableId" value="Default" />
       <updated>1678112835423</updated>
       <workItem from="1678112836576" duration="652000" />
-      <workItem from="1679047352426" duration="342000" />
+      <workItem from="1679047352426" duration="5872000" />
     </task>
+    <task id="LOCAL-00001" summary="start...">
+      <created>1679053176847</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679053176847</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +120,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start..." />
+    <option name="LAST_COMMIT_MESSAGE" value="start..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1678113002784">
@@ -120,9 +154,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1678113482198" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1678113140041">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="210" y="46" key="SettingsEditor" timestamp="1679054673469">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="210" y="46" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1679054673469" />
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1678113140041" />
+    <state x="283" y="124" key="Vcs.Push.Dialog.v2" timestamp="1679053180528">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1679053180528" />
   </component>
 </project>
