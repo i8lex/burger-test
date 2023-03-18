@@ -1,10 +1,18 @@
 import React from "react";
 import { adress } from "../data/data";
+import Map from "./Map";
+import "@tomtom-international/web-sdk-maps/dist/maps.css";
 
 //google map api
 //  AIzaSyAuox7M10M5GbPaThfM9jYWSCIN0NaICzE
 
 //AIzaSyCKcSQas1ejRJMFGxmg25s14t-yNewjJt0
+
+//HERE map api
+// tbDkIihY04Jmt0qauQcev4cPBn1w8AngqjlpDttkSPs
+
+//TomTom
+//A0aRNQFZGIrGLcAtqoPIvxecr1i7cHqv
 
 export const Location = () => {
   return (
@@ -18,6 +26,8 @@ export const Location = () => {
           <p className="location__box__text">{adress.phone}</p>
         </div>
         <div className="location__map">
+          <Map />
+
           <iframe
             title="Burger Factory"
             width="860"
