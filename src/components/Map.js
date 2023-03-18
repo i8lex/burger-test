@@ -7,18 +7,19 @@ const Map = () => {
     const map = tt.map({
       key: "1bxu9E1emgwR4iJxyU68GXYpkceSijbz",
       container: "map",
-      center: [6.632034, 46.519802],
+      center: [6.6330401, 46.5241497],
       zoom: 14,
       basePath: "/sdk",
     });
     const hybrid = require("../data/hybrid.json");
     map.on("load", function () {
       map.setStyle(hybrid);
+      map.setPitch(60);
     });
     const marker = new tt.Marker({
       element: document.createElement("div"),
     })
-      .setLngLat([6.632034, 46.519802])
+      .setLngLat([6.6330401, 46.5241497])
       .addTo(map);
     const iconWay = require("../images/burger.png");
     const customIcon = document.createElement("img");
