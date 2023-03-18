@@ -1,0 +1,30 @@
+@import "mixins";
+
+
+.location {
+  margin-bottom: 150px;
+  @include flex-column-center;
+
+  &__wrapper {
+   @include flex-column-center;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &__text {
+      @include textProp(24px, 35px, 400);
+      margin-bottom: 30px;
+      &:first-child {
+        font-weight: 700;
+      }
+    }
+  }
+}
