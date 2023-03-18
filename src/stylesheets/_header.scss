@@ -2,7 +2,13 @@
 
 
 .header {
-  //margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFFF;
+  z-index: 99;
   display: flex;
   //justify-content: flex-start;
   align-items: center;
@@ -14,6 +20,7 @@
   }
   &__logo {
     display: flex;
+    cursor: pointer;
 
     &__image {
       max-width: 208px;
@@ -27,20 +34,45 @@
     display: -webkit-flex;
     align-items: center;
     justify-content: space-between;
-    gap: 70px
+    gap: 70px;
   }
 
   &__link {
+    //padding: 3px 5px;
+    border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0;
     color: #2A2A2A;
+    cursor: pointer;
+    &:hover {
+      transition: 250ms ease-in-out;
+      transform: scale(1.1);
+    }
+    &__active {
+      transform: scale(1.1);
+    }
   }
 
   &__button {
     margin-left: 329px;
+    cursor: pointer;
     @include button-order;
   }
+}
+
+@media screen and (max-width: 1380px) {
+  .header {
+
+    &__box {
+      gap: 40px
+    }
+
+    &__button {
+      margin-left: 129px;
+    }
+  }
+
 }

@@ -1,6 +1,13 @@
 @import "stylesheets/reset.css";
 @import "~@tomtom-international/web-sdk-maps/dist/maps.css";
 .header {
+  max-width: 1920px;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFFF;
+  z-index: 99;
   display: flex;
   align-items: center;
 }
@@ -11,6 +18,7 @@
 }
 .header__logo {
   display: flex;
+  cursor: pointer;
 }
 .header__logo__image {
   max-width: 208px;
@@ -25,15 +33,25 @@
   gap: 70px;
 }
 .header__link {
+  border-radius: 5px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0;
   color: #2A2A2A;
+  cursor: pointer;
+}
+.header__link:hover {
+  transition: 250ms ease-in-out;
+  transform: scale(1.1);
+}
+.header__link__active {
+  transform: scale(1.1);
 }
 .header__button {
   margin-left: 329px;
+  cursor: pointer;
   padding: 9px 29px 6px 33px;
   max-width: 161px;
   width: 100%;
@@ -49,6 +67,14 @@
   color: #2A2A2A;
 }
 
+@media screen and (max-width: 1380px) {
+  .header__box {
+    gap: 40px;
+  }
+  .header__button {
+    margin-left: 129px;
+  }
+}
 .footer {
   display: flex;
   padding: 0 284px;
@@ -64,6 +90,7 @@
 }
 .footer__logo {
   display: flex;
+  cursor: pointer;
 }
 .footer__logo__image {
   max-width: 208px;
@@ -91,8 +118,17 @@
   color: #2A2A2A;
 }
 
+@media screen and (max-width: 1380px) {
+  .footer__wrapper {
+    margin: 29px 0;
+    display: flex;
+    gap: 783px;
+    align-items: center;
+  }
+}
 .main {
   position: relative;
+  margin-top: 125px;
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
@@ -140,6 +176,7 @@
   background: #F6E224 0 0 no-repeat padding-box;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -157,6 +194,23 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 1380px) {
+  .main {
+    margin-bottom: 50px;
+  }
+  .main__background {
+    max-width: 1380px;
+  }
+  .main__wrapper {
+    gap: 0;
+  }
+  .main__box {
+    padding-top: 82px;
+  }
+  .main__logo__image {
+    max-width: 525px;
+  }
+}
 .ingredients {
   margin-bottom: 150px;
   display: flex;

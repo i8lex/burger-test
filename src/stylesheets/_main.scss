@@ -2,6 +2,7 @@
 
 .main {
   position: relative;
+  margin-top: 125px;
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
@@ -42,6 +43,7 @@
     background: #F6E224 0 0 no-repeat padding-box;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
     @include textProp(18px, 27px, bold);
   }
 
@@ -53,6 +55,31 @@
       object-fit: cover;
     }
   }
+}
+
+@media screen and (max-width: 1380px) {
+  .main {
+    margin-bottom: 50px;
 
 
+    &__background {
+      max-width: 1380px;
+    }
+
+    &__wrapper {
+      gap: 0;
+    }
+
+    &__box {
+      padding-top: 82px;
+
+    }
+
+    &__logo {
+      &__image {
+        max-width: 525px;
+      }
+    }
+
+  }
 }

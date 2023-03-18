@@ -14,6 +14,7 @@
 
   &__logo {
     display: flex;
+    cursor: pointer;
 
     &__image {
       max-width: 208px;
@@ -32,5 +33,17 @@
   &__text {
     @include textProp(14px, 21px, 400);
 
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .footer {
+
+    &__wrapper {
+      margin: 29px 0;
+      display: flex;
+      gap: 783px;
+      align-items: center;
+    }
   }
 }
