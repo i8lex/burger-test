@@ -1,74 +1,97 @@
-// import React, { Component } from "react";
-// import pic from "../images/favicon.ico";
-// import H from "@here/maps-api-for-javascript";
-//
-// class Map extends Component {
-//   componentDidMount() {
-//     const platform = new H.service.Platform({
-//       apikey: "tbDkIihY04Jmt0qauQcev4cPBn1w8AngqjlpDttkSPs",
-//     });
-//     const defaultLayers = platform.createDefaultLayers();
-//     const map = new H.Map(
-//       document.getElementById("mapContainer"),
-//       defaultLayers.vector.normal.map,
-//       {
-//         center: { lat: 37.773972, lng: -122.431297 },
-//         zoom: 14,
-//       }
-//     );
-//     const icon = new H.map.Icon(`${pic}`, {
-//       size: { w: 32, h: 32 },
-//     });
-//     const marker = new H.map.Marker(
-//       { lat: 37.773972, lng: -122.431297 },
-//       { icon }
-//     );
-//     map.addObject(marker);
-//   }
-//
-//   render() {
-//     return <div id="mapContainer" style={{ height: "400px" }} />;
-//   }
-// }
-//
-// export default Map;
-
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import tt from "@tomtom-international/web-sdk-maps";
-import pic from "../images/favicon.ico";
-
 import "@tomtom-international/web-sdk-maps/dist/maps.css";
 
 const Map = () => {
-  const mapElement = useRef(null);
-
   useEffect(() => {
-    const center = [51.509865, -0.118092]; // London coordinates
     const map = tt.map({
-      key: "A0aRNQFZGIrGLcAtqoPIvxecr1i7cHqv",
-      container: mapElement.current,
-      center: center,
-      zoom: 12,
+      key: "1bxu9E1emgwR4iJxyU68GXYpkceSijbz",
+      container: "map",
+      center: [6.632034, 46.519802],
+      zoom: 14,
+      basePath: "/sdk",
     });
-
+    const hybrid = require("../data/hybrid.json");
+    map.on("load", function () {
+      map.setStyle(hybrid);
+    });
     const marker = new tt.Marker({
-      element: createMarkerElement(),
-      anchor: "bottom",
-    }).setLngLat(center);
-    marker.addTo(map);
+      element: document.createElement("div"),
+    })
+      .setLngLat([6.632034, 46.519802])
+      .addTo(map);
+    const iconWay = require("../images/burger.png");
+    const customIcon = document.createElement("img");
+    customIcon.src = iconWay;
+    customIcon.classList.add("location__map__marker");
 
-    return () => {
-      map.remove();
-    };
+    marker._element.appendChild(customIcon);
   }, []);
 
-  const createMarkerElement = () => {
-    const markerElement = document.createElement("div");
-    markerElement.innerHTML = '<img src="../images/favicon.ico" />';
-    return markerElement;
-  };
-
-  return <div ref={mapElement} className="map" />;
+  return (
+    <div id="map" style={{ width: "860px", height: "483px" }}>
+      {/* Map container */}
+    </div>
+  );
 };
 
 export default Map;
+
+// import React, { useEffect } from "react";
+// import tt from "@tomtom-international/web-sdk-maps";
+// import "@tomtom-international/web-sdk-maps/dist/maps.css";
+//
+// const Map = () => {
+//   useEffect(() => {
+//     const map = tt.map({
+//       key: "1bxu9E1emgwR4iJxyU68GXYpkceSijbz",
+//       container: "map",
+//       center: [6.632034, 46.519802],
+//       zoom: 14,
+//       basePath: "/sdk",
+//     });
+//
+//     const hybrid = require("../data/hybrid.json");
+//     map.on("load", function () {
+//       map.setStyle(hybrid);
+//     });
+//
+//     const marker = new tt.Marker({
+//       element: document.createElement("div"),
+//     })
+//       .setLngLat([6.632034, 46.519802])
+//       .addTo(map);
+//
+//     const iconWay = require("../images/burger.png");
+//     const customIcon = document.createElement("img");
+//     customIcon.src = iconWay;
+//     customIcon.classList.add("location__map__marker");
+//
+//     marker._element.appendChild(customIcon);
+//
+//     // Find way button click event handler
+//     const findWayButton = document.getElementById("find-way-button");
+//     findWayButton.addEventListener("click", () => {
+//       navigator.geolocation.getCurrentPosition((position) => {
+//         const lngLat = [position.coords.longitude, position.coords.latitude];
+//         map.flyTo({ center: lngLat, zoom: 14 });
+//
+//         // Add a marker at the current location
+//         new tt.Marker({ element: document.createElement("div") })
+//           .setLngLat(lngLat)
+//           .addTo(map);
+//       });
+//     });
+//   }, []);
+//
+//   return (
+//     <div>
+//       <div id="map" style={{ width: "860px", height: "483px" }}>
+//         {/* Map container */}
+//       </div>
+//       <button id="find-way-button">Find way to my position</button>
+//     </div>
+//   );
+// };
+//
+// export default Map;

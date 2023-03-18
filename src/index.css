@@ -1,4 +1,5 @@
 @import "stylesheets/reset.css";
+@import "~@tomtom-international/web-sdk-maps/dist/maps.css";
 .header {
   display: flex;
   align-items: center;
@@ -413,6 +414,14 @@
 .location__map {
   overflow: hidden;
   border-radius: 30px;
+}
+.location__map__marker {
+  width: 36px;
+  height: 33px;
+  padding: 9px 7px 8px 7px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 50%;
 }
 
 #root {

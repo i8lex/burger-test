@@ -32,5 +32,15 @@
     overflow: hidden;
     border-radius: 30px;
 
+    &__marker{
+      width: 36px;
+      height: 33px;
+      padding: 9px 7px 8px 7px;
+      background-color: #FFFFFF;
+      box-shadow: 0 3px 6px #00000029;
+      border-radius: 50%;
+    }
   }
+
+
 }

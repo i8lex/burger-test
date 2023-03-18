@@ -27,18 +27,17 @@ export const Location = () => {
         </div>
         <div className="location__map">
           <Map />
-
-          <iframe
-            title="Burger Factory"
-            width="860"
-            height="483"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?width=860&amp;height=483&amp;hl=en&amp;q=Pl.%20de%20la%20Riponne%2010%20Lausanne+(Burger%20Factory)&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          />
+          {/*<iframe*/}
+          {/*  title="Burger Factory"*/}
+          {/*  width="860"*/}
+          {/*  height="483"*/}
+          {/*  frameBorder="0"*/}
+          {/*  scrolling="no"*/}
+          {/*  marginHeight="0"*/}
+          {/*  marginWidth="0"*/}
+          {/*  id="gmap_canvas"*/}
+          {/*  src="https://maps.google.com/maps?width=860&amp;height=483&amp;hl=en&amp;q=Pl.%20de%20la%20Riponne%2010%20Lausanne+(Burger%20Factory)&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"*/}
+          {/*/>*/}
         </div>
       </div>
     </section>
