@@ -1,19 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { adress } from "../data/data";
+import logo from "../images/logo_header@2x.png";
 
 export const Footer = () => {
   return (
-    <div className="footer__wrapper">
-      <Link to={"/"}>
-        <img
-          src="../images/logo_header@2x.png"
-          alt="Burger logo"
-          className="footer__img"
-        />
-      </Link>
-      <div className="footer__box">
-        <p className="footer__text">123</p>
+    <footer className="footer">
+      <div className="footer__wrapper">
+        <Link className="footer__logo" to={"/"}>
+          <img className="footer__logo__image" src={logo} alt="Burger logo" />
+        </Link>
+        <div className="footer__box">
+          <h6 className="footer__title">{adress.name}</h6>
+          <p className="footer__text">{adress.street}</p>
+          <p className="footer__text">{adress.city}</p>
+          <p className="footer__text">{adress.phone}</p>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };

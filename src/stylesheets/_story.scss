@@ -1,0 +1,41 @@
+@import "mixins";
+
+.story {
+  margin-bottom: 150px;
+  @include flex-column-center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap:49px;
+  }
+
+  &__card {
+    max-width: 668px;
+
+    &__title {
+      @include title;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      @include textProp(24px, 35px, 700);
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    @include textProp(18px, 27px, 400)
+  }
+
+  &__image {
+    display: flex;
+
+    &__img {
+      object-fit: cover;
+      max-width: 635px;
+
+    }
+  }
+
+}

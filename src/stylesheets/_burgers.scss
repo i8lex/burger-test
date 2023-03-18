@@ -1,0 +1,55 @@
+@import "mixins";
+
+.burgers {
+  margin-bottom: 150px;
+  @include flex-column-center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 50px;
+  }
+
+  &__box {
+    @include flex-column-center;
+    max-width: 440px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 26px;
+
+    &__title {
+      margin: 20px 0 61px;
+      @include textProp(24px, 35px, 700)
+
+    }
+  }
+
+  &__image {
+    display: flex;
+
+    &__img {
+      max-width: 220px;
+      object-fit: cover;
+      padding:61px 110px 42px;
+    }
+  }
+
+  &__link {
+    margin: 0 20px 20px 0;
+    @include textProp(18px, 27px, 700);
+    color: #008BF6;
+    align-self: flex-end;
+  }
+
+  &__btn {
+    @include button-order;
+  }
+
+
+}

@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  padding: 0 284px;
+  align-items: center;
+  background: #F5F5F5 0 0 no-repeat padding-box;
+  margin-bottom: 150px;
+
+  &__wrapper {
+    margin: 29px 0;
+    display: flex;
+    gap: 1013px;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+
+    &__image {
+      max-width: 208px;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    @include textProp(14px, 21px, 700);
+  }
+
+  &__text {
+    @include textProp(14px, 21px, 400);
+
+  }
+}

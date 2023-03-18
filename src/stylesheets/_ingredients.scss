@@ -2,7 +2,8 @@
 
 
 .ingredients {
-  margin: 0 auto 150px;
+  margin-bottom: 150px;
+
   @include flex-column-center;
 
   &__wrapper {
