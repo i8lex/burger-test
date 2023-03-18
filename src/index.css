@@ -67,6 +67,9 @@
   max-width: 208px;
   object-fit: cover;
 }
+.footer__box {
+  width: 131px;
+}
 .footer__title {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -405,6 +408,10 @@
 }
 .location__box__text:first-child {
   font-weight: 700;
+}
+.location__map {
+  overflow: hidden;
+  border-radius: 30px;
 }
 
 #root {

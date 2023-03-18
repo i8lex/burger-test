@@ -1,39 +1,12 @@
 import React from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { adress } from "../data/data";
 
-const containerStyle = {
-  width: "860px",
-  height: "483px",
-  borderRadius: "30px",
-};
-
-const center = {
-  lat: -3.745,
-  lng: -38.523,
-};
 //google map api
 //  AIzaSyAuox7M10M5GbPaThfM9jYWSCIN0NaICzE
 
+//AIzaSyCKcSQas1ejRJMFGxmg25s14t-yNewjJt0
+
 export const Location = () => {
-  const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "AIzaSyAuox7M10M5GbPaThfM9jYWSCIN0NaICzE",
-  });
-
-  const [map, setMap] = React.useState(null);
-
-  const onLoad = React.useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-
-    setMap(map);
-  }, []);
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
   return (
     <section className="location">
       <div className="location__wrapper">
@@ -45,25 +18,17 @@ export const Location = () => {
           <p className="location__box__text">{adress.phone}</p>
         </div>
         <div className="location__map">
-          {isLoaded ? (
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={center}
-              zoom={50}
-              onLoad={onLoad}
-              onUnmount={onUnmount}
-            >
-              {/* Child components, such as markers, info windows, etc. */}
-              <></>
-            </GoogleMap>
-          ) : (
-            <></>
-          )}
-          {/*<img*/}
-          {/*  src="../images/map@2x.png"*/}
-          {/*  alt="map"*/}
-          {/*  className="location__iamge__img"*/}
-          {/*/>*/}
+          <iframe
+            title="Burger Factory"
+            width="860"
+            height="483"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=860&amp;height=483&amp;hl=en&amp;q=Pl.%20de%20la%20Riponne%2010%20Lausanne+(Burger%20Factory)&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          />
         </div>
       </div>
     </section>

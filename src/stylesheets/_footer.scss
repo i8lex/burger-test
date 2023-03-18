@@ -21,6 +21,10 @@
     }
   }
 
+  &__box {
+    width: 131px;
+  }
+
   &__title {
     @include textProp(14px, 21px, 700);
   }
