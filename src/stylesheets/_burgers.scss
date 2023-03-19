@@ -4,7 +4,6 @@
   margin:0 auto 150px;
   max-width: 1373px;
   @include flex-column-center;
-  overflow: hidden;
 
   &__wrapper {
     display: flex;
@@ -13,6 +12,7 @@
   }
 
   &__title {
+    text-align: center;
     @include title;
   }
 
@@ -59,10 +59,30 @@
     @include textProp(18px, 27px, 700);
     color: #008BF6;
     align-self: flex-end;
+    &:hover {
+      transition: 250ms ease-in-out;
+      transform: scale(1.1);
+    }
+    &:active {
+      transition: 50ms ease-in-out;
+      transform: scale(1.2);
+    }
   }
 
   &__btn {
     @include button-order;
+    &:hover {
+      transition: 250ms ease-in-out;
+      transform: scale(1.05);
+      border: 1px black solid;
+      box-shadow: 0 3px 6px #00000029;
+      &:active {
+        transition: 50ms ease-in-out;
+        transform: scale(1.1);
+        border: 1px black solid;
+        box-shadow: 0 3px 6px #00000029;
+      }
+    }
   }
 }
 

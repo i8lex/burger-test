@@ -66,6 +66,12 @@
     @include button-order;
     &:hover {
       transition: 250ms ease-in-out;
+      transform: scale(1.05);
+      border: 1px black solid;
+      box-shadow: 0 3px 6px #00000029;
+    }
+    &:active {
+      transition: 50ms ease-in-out;
       transform: scale(1.1);
       border: 1px black solid;
       box-shadow: 0 3px 6px #00000029;

@@ -72,6 +72,12 @@
 }
 .header__button:hover {
   transition: 250ms ease-in-out;
+  transform: scale(1.05);
+  border: 1px black solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.header__button:active {
+  transition: 50ms ease-in-out;
   transform: scale(1.1);
   border: 1px black solid;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
@@ -91,7 +97,6 @@
 .footer {
   display: flex;
   overflow: hidden;
-  padding: 0 284px;
   align-items: center;
   background: #F5F5F5 0 0 no-repeat padding-box;
   margin: 0 auto 150px;
@@ -151,7 +156,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 .main__background {
   position: absolute;
@@ -204,6 +208,18 @@
   letter-spacing: 0;
   color: #2A2A2A;
 }
+.main__button:hover {
+  transition: 250ms ease-in-out;
+  transform: scale(1.05);
+  border: 1px black solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.main__button:active {
+  transition: 50ms ease-in-out;
+  transform: scale(1.1);
+  border: 1px black solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
 .main__logo {
   display: flex;
 }
@@ -246,7 +262,6 @@
 }
 .ingredients {
   margin: 0 auto 150px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,7 +362,6 @@
 }
 .story {
   margin: 0 auto 150px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -414,7 +428,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .burgers__wrapper {
   display: flex;
@@ -422,6 +435,7 @@
   gap: 16px;
 }
 .burgers__title {
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -483,6 +497,14 @@
   color: #008BF6;
   align-self: flex-end;
 }
+.burgers__link:hover {
+  transition: 250ms ease-in-out;
+  transform: scale(1.1);
+}
+.burgers__link:active {
+  transition: 50ms ease-in-out;
+  transform: scale(1.2);
+}
 .burgers__btn {
   padding: 9px 29px 6px 33px;
   max-width: 161px;
@@ -497,6 +519,18 @@
   font-size: 18px;
   letter-spacing: 0;
   color: #2A2A2A;
+}
+.burgers__btn:hover {
+  transition: 250ms ease-in-out;
+  transform: scale(1.05);
+  border: 1px black solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.burgers__btn:hover:active {
+  transition: 50ms ease-in-out;
+  transform: scale(1.1);
+  border: 1px black solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
 @media screen and (max-width: 1380px) {
@@ -523,7 +557,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .location__wrapper {
   display: flex;

@@ -4,7 +4,6 @@
 .location {
   margin: 0 auto 150px;
   @include flex-column-center;
-  overflow: hidden;
 
   &__wrapper {
    @include flex-column-center;
