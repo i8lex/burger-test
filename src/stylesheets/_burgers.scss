@@ -21,6 +21,9 @@
   &__swiper-container {
     max-width: 1372px;
   }
+  &__swiper-slide {
+    left: 4px;
+  }
 
   &__box {
     @include flex-column-center;
@@ -33,6 +36,11 @@
       margin: 20px 0 61px;
       @include textProp(24px, 35px, 700)
 
+    }
+
+    &:hover {
+      transition: 250ms ease-in-out;
+      transform: scale(1.05);
     }
   }
 

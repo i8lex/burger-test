@@ -386,6 +386,9 @@
 .burgers__swiper-container {
   max-width: 1372px;
 }
+.burgers__swiper-slide {
+  left: 4px;
+}
 .burgers__box {
   display: flex;
   flex-direction: column;
@@ -405,6 +408,10 @@
   font-style: normal;
   letter-spacing: 0;
   color: #2A2A2A;
+}
+.burgers__box:hover {
+  transition: 250ms ease-in-out;
+  transform: scale(1.05);
 }
 .burgers__image {
   display: flex;
