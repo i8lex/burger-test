@@ -18,6 +18,10 @@
     margin-bottom: 50px;
   }
 
+  &__swiper-container {
+    max-width: 1372px;
+  }
+
   &__box {
     @include flex-column-center;
     max-width: 440px;

@@ -383,6 +383,9 @@
   color: #2A2A2A;
   margin-bottom: 50px;
 }
+.burgers__swiper-container {
+  max-width: 1372px;
+}
 .burgers__box {
   display: flex;
   flex-direction: column;

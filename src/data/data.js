@@ -100,47 +100,56 @@ export const adress = {
 
 export const burgers = {
   poundCheese: {
+    id: 1,
     name: "1/4 Pound Cheese",
     image2x: require("../images/burger@2x.png"),
     link: "/poundCheese",
   },
   bigBurger: {
+    id: 2,
     name: "Big Burger",
     image2x: require("../images/burger@2x.png"),
     link: "/bigBurger",
   },
   pureBacon: {
+    id: 3,
     name: "Pure Bacon",
     image2x: require("../images/burger@2x.png"),
     link: "/pureBacon",
   },
   poundCheese1: {
-    name: "1/4 Pound Cheese1",
+    id: 4,
+    name: "1/4 Pound Cheese",
     image2x: require("../images/burger@2x.png"),
     link: "/poundCheese",
   },
   bigBurger1: {
-    name: "Big Burger1",
+    id: 5,
+    name: "Big Burger",
     image2x: require("../images/burger@2x.png"),
     link: "/bigBurger",
   },
   pureBacon1: {
-    name: "Pure Bacon1",
+    id: 6,
+    name: "Pure Bacon",
     image2x: require("../images/burger@2x.png"),
     link: "/pureBacon",
   },
   poundCheese2: {
-    name: "1/4 Pound Cheese2",
+    id: 7,
+    name: "1/4 Pound Cheese",
     image2x: require("../images/burger@2x.png"),
     link: "/poundCheese",
   },
   bigBurger2: {
-    name: "Big Burger2",
+    id: 8,
+    name: "Big Burger",
     image2x: require("../images/burger@2x.png"),
     link: "/bigBurger",
   },
   pureBacon2: {
-    name: "Pure Bacon2",
+    id: 9,
+    name: "Pure Bacon",
     image2x: require("../images/burger@2x.png"),
     link: "/pureBacon",
   },

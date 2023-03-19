@@ -23,21 +23,48 @@ const Card = ({ name, image, link }) => {
 };
 
 export const Burgers = () => {
+  const swiper = useRef(null);
+
+  const initSwiper = () => {
+    swiper.current = new Swiper(".burger__swiper-container", {
+      loop: true,
+      spaceBetween: 16,
+      centeredSlides: true,
+      slidesPerView: "3",
+      slidesPerGroup: 1,
+      grabCursor: true,
+      autoplay: true,
+      initialSlide: 1,
+    });
+  };
   return (
     <section className="burgers">
       <h4 className="burgers__title">Burgers</h4>
       <div className="burgers__wrapper">
-        {Object.values(burgers).map((burger) => {
-          return (
-            <Card
-              key={burger.name}
-              name={burger.name}
-              image={burger.image2x}
-              link={burger.link}
-            />
-          );
-        })}
+        <div
+          className="burger__swiper-container burgers__swiper-container"
+          onLoad={initSwiper}
+        >
+          <div className="swiper-wrapper">
+            {Object.values(burgers).map((burger) => {
+              return (
+                <div
+                  className="swiper-slide burgers__swiper-slide"
+                  key={burger.id}
+                >
+                  <Card
+                    key={burger.name}
+                    name={burger.name}
+                    image={burger.image2x}
+                    link={burger.link}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
+
       <button className="burgers__btn">Order now</button>
     </section>
   );
