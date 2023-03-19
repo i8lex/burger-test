@@ -1,6 +1,15 @@
 @import "mixins";
 
 
+.swiper-slide {
+  max-width: 281px;
+  right: 125px;
+}
+
+.swiper-container {
+  max-width: 1072px;
+}
+
 .ingredients {
   margin-bottom: 150px;
 
@@ -34,17 +43,18 @@
 
     &__card-title {
       @include textProp(18px, 27px, 700);
-      //padding-bottom: 20px;
+      padding-bottom: 20px;
     }
 
     &__card {
       margin: 15px 0;
       @include flex-column-center;
       justify-content: space-between;
-      padding: 20px 0;
-      gap: 20px;
-      width: 229px;
+      //padding: 20px 0;
+      //gap: 20px;
+      max-width: 229px;
       height: 242px;
+      //height: 100%;
       background: #FFFFFF 0 0 no-repeat padding-box;
       box-shadow: 0 3px 6px #00000029;
       border-radius: 26px;
@@ -61,6 +71,7 @@
   }
 
   &__image-box {
+    padding-top: 20px;
     display: flex;
 
     &__image {

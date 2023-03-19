@@ -1,5 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
+import Swiper from "swiper";
+
 import { ingredients } from "../data/data";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+import "swiper/swiper.min.css";
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Navigation, Pagination]);
 
 const Card = ({ name, image, maxWidth }) => {
   return (
@@ -20,6 +27,19 @@ const Card = ({ name, image, maxWidth }) => {
 };
 
 export const Ingredients = () => {
+  const swiper = useRef(null);
+
+  const initSwiper = () => {
+    swiper.current = new Swiper(".swiper-container", {
+      loop: false,
+      spaceBetween: 0,
+      slidesPerView: "4",
+      centeredSlides: true,
+      grabCursor: true,
+      autoplay: true,
+      initialSlide: 1,
+    });
+  };
   return (
     <section className="ingredients">
       <div className="container">
@@ -30,16 +50,19 @@ export const Ingredients = () => {
             mollis id arcu vel maximus.
           </h6>
           <div className="ingredients__box">
-            {Object.values(ingredients).map(({ name, image2x, maxWidth }) => {
-              return (
-                <Card
-                  key={name}
-                  name={name}
-                  image={image2x}
-                  maxWidth={maxWidth}
-                />
-              );
-            })}
+            <div className="swiper-container" onLoad={initSwiper}>
+              <div className="swiper-wrapper">
+                {Object.values(ingredients).map(
+                  ({ id, name, image2x, maxWidth }) => {
+                    return (
+                      <div className="swiper-slide" key={id}>
+                        <Card name={name} image={image2x} maxWidth={maxWidth} />
+                      </div>
+                    );
+                  }
+                )}
+              </div>
+            </div>
           </div>
 
           <p className="ingredients__text">

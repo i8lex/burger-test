@@ -1,5 +1,6 @@
 export const ingredients = {
   buns: {
+    id: 1,
     name: "buns",
     image: require("../images/bun.png"),
     image2x: require("../images/bun@2x.png"),
@@ -7,6 +8,7 @@ export const ingredients = {
   },
 
   salad: {
+    id: 2,
     name: "salad",
     image: require("../images/salad.png"),
     image2x: require("../images/salad@2x.png"),
@@ -14,65 +16,75 @@ export const ingredients = {
   },
 
   tomato: {
+    id: 3,
     name: "tomato",
     image: require("../images/tomato.png"),
     image2x: require("../images/tomato@2x.png"),
     maxWidth: "138px",
   },
   cheese: {
+    id: 4,
     name: "cheese",
     image: require("../images/cheese.png"),
     image2x: require("../images/cheese@2x.png"),
     maxWidth: "138px",
   },
   buns1: {
-    name: "buns1",
+    id: 5,
+    name: "buns",
     image: require("../images/bun.png"),
     image2x: require("../images/bun@2x.png"),
     maxWidth: "194px",
   },
 
   salad1: {
-    name: "salad1",
+    id: 6,
+    name: "salad",
     image: require("../images/salad.png"),
     image2x: require("../images/salad@2x.png"),
     maxWidth: "152px",
   },
 
   tomato1: {
-    name: "tomato1",
+    id: 7,
+    name: "tomato",
     image: require("../images/tomato.png"),
     image2x: require("../images/tomato@2x.png"),
     maxWidth: "138px",
   },
   cheese1: {
-    name: "cheese1",
+    id: 8,
+    name: "cheese",
     image: require("../images/cheese.png"),
     image2x: require("../images/cheese@2x.png"),
     maxWidth: "138px",
   },
   buns2: {
-    name: "buns2",
+    id: 9,
+    name: "buns",
     image: require("../images/bun.png"),
     image2x: require("../images/bun@2x.png"),
     maxWidth: "194px",
   },
 
   salad2: {
-    name: "salad2",
+    id: 10,
+    name: "salad",
     image: require("../images/salad.png"),
     image2x: require("../images/salad@2x.png"),
     maxWidth: "152px",
   },
 
   tomato2: {
-    name: "tomato2",
+    id: 11,
+    name: "tomato",
     image: require("../images/tomato.png"),
     image2x: require("../images/tomato@2x.png"),
     maxWidth: "138px",
   },
   cheese2: {
-    name: "cheese2",
+    id: 12,
+    name: "cheese",
     image: require("../images/cheese.png"),
     image2x: require("../images/cheese@2x.png"),
     maxWidth: "138px",
