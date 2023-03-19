@@ -211,15 +211,6 @@
     max-width: 525px;
   }
 }
-.swiper-slide {
-  max-width: 281px;
-  right: 125px;
-}
-
-.swiper-container {
-  max-width: 1072px;
-}
-
 .ingredients {
   margin-bottom: 150px;
   display: flex;
@@ -257,10 +248,16 @@
   max-width: 690px;
   margin-bottom: 50px;
 }
+.ingredients__swiper-container {
+  max-width: 1072px;
+}
+.ingredients__swiper-slide {
+  max-width: 281px;
+  right: 125px;
+}
 .ingredients__box {
   overflow: hidden;
   max-width: 1373px;
-  gap: 52px;
   margin-bottom: 50px;
 }
 .ingredients__box__card-title {

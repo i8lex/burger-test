@@ -50,12 +50,18 @@ export const Ingredients = () => {
             mollis id arcu vel maximus.
           </h6>
           <div className="ingredients__box">
-            <div className="swiper-container" onLoad={initSwiper}>
+            <div
+              className="swiper-container ingredients__swiper-container"
+              onLoad={initSwiper}
+            >
               <div className="swiper-wrapper">
                 {Object.values(ingredients).map(
                   ({ id, name, image2x, maxWidth }) => {
                     return (
-                      <div className="swiper-slide" key={id}>
+                      <div
+                        className="swiper-slide ingredients__swiper-slide"
+                        key={id}
+                      >
                         <Card name={name} image={image2x} maxWidth={maxWidth} />
                       </div>
                     );

@@ -1,18 +1,7 @@
 @import "mixins";
 
-
-.swiper-slide {
-  max-width: 281px;
-  right: 125px;
-}
-
-.swiper-container {
-  max-width: 1072px;
-}
-
 .ingredients {
   margin-bottom: 150px;
-
   @include flex-column-center;
 
   &__wrapper {
@@ -34,11 +23,18 @@
     }
   }
 
+  &__swiper-container {
+    max-width: 1072px;
+  }
+
+  &__swiper-slide {
+    max-width: 281px;
+    right: 125px;
+  }
+
   &__box {
-    //display: flex;
     overflow: hidden;
     max-width: 1373px;
-    gap: 52px;
     margin-bottom: 50px;
 
     &__card-title {
@@ -50,11 +46,8 @@
       margin: 15px 0;
       @include flex-column-center;
       justify-content: space-between;
-      //padding: 20px 0;
-      //gap: 20px;
       max-width: 229px;
       height: 242px;
-      //height: 100%;
       background: #FFFFFF 0 0 no-repeat padding-box;
       box-shadow: 0 3px 6px #00000029;
       border-radius: 26px;
@@ -64,9 +57,6 @@
         transform: scale(1.05);
       }
     }
-
-
-
 
   }
 

@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import Swiper from "swiper";
 import { burgers } from "../data/data";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+import "swiper/swiper.min.css";
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Navigation, Pagination]);
 
 const Card = ({ name, image, link }) => {
   return (
