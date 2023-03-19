@@ -25,6 +25,58 @@ export const ingredients = {
     image2x: require("../images/cheese@2x.png"),
     maxWidth: "138px",
   },
+  buns1: {
+    name: "buns1",
+    image: require("../images/bun.png"),
+    image2x: require("../images/bun@2x.png"),
+    maxWidth: "194px",
+  },
+
+  salad1: {
+    name: "salad1",
+    image: require("../images/salad.png"),
+    image2x: require("../images/salad@2x.png"),
+    maxWidth: "152px",
+  },
+
+  tomato1: {
+    name: "tomato1",
+    image: require("../images/tomato.png"),
+    image2x: require("../images/tomato@2x.png"),
+    maxWidth: "138px",
+  },
+  cheese1: {
+    name: "cheese1",
+    image: require("../images/cheese.png"),
+    image2x: require("../images/cheese@2x.png"),
+    maxWidth: "138px",
+  },
+  buns2: {
+    name: "buns2",
+    image: require("../images/bun.png"),
+    image2x: require("../images/bun@2x.png"),
+    maxWidth: "194px",
+  },
+
+  salad2: {
+    name: "salad2",
+    image: require("../images/salad.png"),
+    image2x: require("../images/salad@2x.png"),
+    maxWidth: "152px",
+  },
+
+  tomato2: {
+    name: "tomato2",
+    image: require("../images/tomato.png"),
+    image2x: require("../images/tomato@2x.png"),
+    maxWidth: "138px",
+  },
+  cheese2: {
+    name: "cheese2",
+    image: require("../images/cheese.png"),
+    image2x: require("../images/cheese@2x.png"),
+    maxWidth: "138px",
+  },
 };
 
 export const adress = {
