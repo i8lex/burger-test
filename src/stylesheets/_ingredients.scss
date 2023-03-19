@@ -36,15 +36,23 @@
     }
 
     &__card {
+      margin: 15px 0;
       @include flex-column-center;
       justify-content: space-between;
       padding: 20px 0;
       gap: 20px;
       width: 229px;
+      height: 242px;
       background: #FFFFFF 0 0 no-repeat padding-box;
       box-shadow: 0 3px 6px #00000029;
       border-radius: 26px;
+
+      &:hover {
+        transition: 250ms ease-in-out;
+        transform: scale(1.05);
+      }
     }
+
 
 
 

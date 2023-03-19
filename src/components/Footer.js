@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { adress } from "../data/data";
 import logo from "../images/logo_header@2x.png";
 import { ROUTES } from "../constants";
