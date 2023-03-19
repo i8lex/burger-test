@@ -61,6 +61,15 @@
   .main {
     margin-bottom: 50px;
 
+    &__wrapper {
+      max-width: 1065px;
+    }
+
+    &__title {
+      @include textProp(80px, 120px, 900);
+      margin-bottom: 20px;
+    }
+
 
     &__background {
       max-width: 1380px;
@@ -77,7 +86,7 @@
 
     &__logo {
       &__image {
-        max-width: 525px;
+        max-width: 470px;
       }
     }
 

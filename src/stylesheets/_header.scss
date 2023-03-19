@@ -60,14 +60,22 @@
     margin-left: 329px;
     cursor: pointer;
     @include button-order;
+    &:hover {
+      transition: 250ms ease-in-out;
+      transform: scale(1.1);
+      border: 1px black solid;
+      box-shadow: 0 3px 6px #00000029;
+    }
   }
 }
 
 @media screen and (max-width: 1380px) {
   .header {
-
+    &__wrapper {
+      max-width: 1065px;
+    }
     &__box {
-      gap: 40px
+      gap: 35px
     }
 
     &__button {

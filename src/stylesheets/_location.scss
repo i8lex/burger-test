@@ -41,6 +41,12 @@
       border-radius: 50%;
     }
   }
+}
 
-
+@media screen and (max-width: 1380px) {
+  .location {
+    &__wrapper {
+      max-width: 1065px;
+    }
+  }
 }

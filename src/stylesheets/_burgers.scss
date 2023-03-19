@@ -10,16 +10,17 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    margin-bottom: 50px;
   }
 
   &__title {
     @include title;
-    margin-bottom: 50px;
   }
 
   &__swiper-container {
     max-width: 1372px;
+    padding: 50px 0;
+    box-shadow: inset 0 0 49px 25px rgba(255,255,255,0.8);
+    overflow: hidden;
   }
   &__swiper-slide {
     left: 4px;
@@ -35,7 +36,6 @@
     &__title {
       margin: 20px 0 61px;
       @include textProp(24px, 35px, 700)
-
     }
 
     &:hover {
@@ -64,6 +64,34 @@
   &__btn {
     @include button-order;
   }
+}
 
+@media screen and (max-width: 1380px) {
+  .burgers {
+    &__wrapper {
+      max-width: 880px;
 
+    }
+
+    &__swiper-container {
+      max-width: 880px;
+    }
+
+    &__swiper-slide {
+      max-width: 260px;
+      left: 75px;
+    }
+
+    &__image {
+      &__img {
+        padding:0;
+      }
+    }
+
+    &__box {
+      &__title {
+        margin: 20px 0 31px;
+      }
+    }
+  }
 }

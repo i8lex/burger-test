@@ -34,8 +34,15 @@
     &__img {
       object-fit: cover;
       max-width: 635px;
-
+      border-radius: 30px;
     }
   }
+}
 
+@media screen and (max-width: 1380px) {
+  .story {
+    &__wrapper {
+      max-width: 1065px;
+    }
+  }
 }
