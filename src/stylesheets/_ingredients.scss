@@ -19,12 +19,13 @@
       @include textProp(24px, 35px, bold);
       text-align: center;
       max-width: 690px;
-      margin-bottom: 50px;
     }
   }
 
   &__swiper-container {
+    position: relative;
     max-width: 1072px;
+
   }
 
   &__swiper-slide {
@@ -35,7 +36,7 @@
   &__box {
     overflow: hidden;
     max-width: 1373px;
-    margin-bottom: 50px;
+    padding: 50px 0;
 
     &__card-title {
       @include textProp(18px, 27px, 700);
@@ -51,18 +52,19 @@
       background: #FFFFFF 0 0 no-repeat padding-box;
       box-shadow: 0 3px 6px #00000029;
       border-radius: 26px;
+      z-index: 5;
 
       &:hover {
         transition: 250ms ease-in-out;
         transform: scale(1.05);
       }
     }
-
   }
 
   &__image-box {
     padding-top: 20px;
     display: flex;
+    align-items: flex-start;
 
     &__image {
       max-width: 194px;
@@ -79,5 +81,56 @@
 @media screen and (max-width: 1380px) {
   .ingredients {
    max-width: 1380px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .ingredients {
+    max-width: 1080px;
+
+    &__title {
+      @include textProp(45px, 55px, 900);
+      margin-bottom: 14px;
+
+      &__text {
+        @include textProp(14px, 25px, bold);
+        max-width: 400px;
+      }
+    }
+
+    &__swiper-container {
+      max-width: 600px;
+
+    }
+
+    &__swiper-slide {
+      max-width: 281px;
+      right: 70px;
+    }
+
+    &__box {
+      overflow: hidden;
+      max-width: 600px;
+      padding: 30px 0;
+
+      &__card-title {
+        @include textProp(14px, 22px, 700);
+        padding-bottom: 10px;
+      }
+
+      &__card {
+        max-width: 140px;
+        max-height: 162px;
+
+      }
+    }
+    &__image-box img {
+        max-width: 100px !important;
+    }
+
+    &__text {
+      max-width: 760px;
+      @include textProp(14px, 25px, 400);
+    }
   }
 }

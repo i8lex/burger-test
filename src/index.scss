@@ -8,6 +8,7 @@
 @import "stylesheets/burgers";
 @import "stylesheets/location";
 @import "~@tomtom-international/web-sdk-maps/dist/maps.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 
 
 body {
@@ -22,6 +23,11 @@ body {
   .container{
   max-width: 1380px;
   }
+}
 
+@media screen and (max-width: 1080px) {
+  .container{
+    max-width: 1080px;
+  }
 }
 

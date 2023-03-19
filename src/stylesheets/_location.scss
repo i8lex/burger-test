@@ -51,3 +51,24 @@
     }
   }
 }
+
+@media screen and (max-width: 1380px) {
+  .location {
+    max-width: 1080px;
+    &__wrapper {
+      max-width: 765px;
+    }
+
+    &__box {
+      gap: 20px;
+
+      &__text {
+        @include textProp(16px, 20px, 400);
+        margin-bottom: 16px;
+        &:first-child {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

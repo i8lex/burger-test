@@ -62,6 +62,8 @@
 
   &__logo {
     display: flex;
+    align-items: flex-start;
+
     &__image {
       max-width: 625px;
       width: 100%;
@@ -84,7 +86,6 @@
       margin-bottom: 20px;
     }
 
-
     &__background {
       max-width: 1380px;
     }
@@ -95,7 +96,6 @@
 
     &__box {
       padding-top: 82px;
-
     }
 
     &__logo {
@@ -103,6 +103,50 @@
         max-width: 470px;
       }
     }
-
   }
 }
+
+@media screen and (max-width: 1080px) {
+  .main {
+    margin-bottom: 50px;
+    max-width: 1080px;
+
+    &__wrapper {
+      max-width: 765px;
+    }
+
+    &__title {
+      @include textProp(55px, 70px, 900);
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      @include textProp(14px, 25px, bold);
+    }
+
+    &__button {
+      padding: 8px 26px 7px 27px;
+      @include textProp(14px, 23px, bold);
+    }
+
+    &__background {
+      max-width: 1080px;
+    }
+
+    &__wrapper {
+      gap: 0;
+    }
+
+    &__box {
+      padding-top: 50px;
+    }
+
+    &__logo {
+      &__image {
+        max-width: 320px;
+      }
+    }
+  }
+}
+
+

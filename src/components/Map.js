@@ -1,9 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import tt from "@tomtom-international/web-sdk-maps";
 import "@tomtom-international/web-sdk-maps/dist/maps.css";
 
 const Map = () => {
+  const [mapWidth, setMapWidth] = useState("860px");
+  const [mapHeight, setMapHeight] = useState("483px");
+
   useEffect(() => {
+    function handleResize() {
+      const width = window.innerWidth;
+      if (width <= 375) {
+        setMapWidth("375px");
+        setMapHeight("300px");
+      } else if (width <= 1080) {
+        setMapWidth("600px");
+        setMapHeight("450px");
+      } else {
+        setMapWidth("860px");
+      }
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
     const map = tt.map({
       key: "1bxu9E1emgwR4iJxyU68GXYpkceSijbz",
       container: "map",
@@ -27,10 +46,11 @@ const Map = () => {
     customIcon.classList.add("location__map__marker");
 
     marker._element.appendChild(customIcon);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div id="map" style={{ width: "860px", height: "483px" }}>
+    <div id="map" style={{ width: mapWidth, height: mapHeight }}>
       {/* Map container */}
     </div>
   );

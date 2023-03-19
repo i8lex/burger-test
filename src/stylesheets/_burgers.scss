@@ -115,3 +115,38 @@
     }
   }
 }
+
+@media screen and (max-width: 1080px) {
+  .burgers {
+    &__wrapper {
+      max-width: 880px;
+    }
+
+    &__title {
+      @include textProp(45px, 55px, 900);
+    }
+
+    &__swiper-container {
+      max-width: 880px;
+    }
+
+    &__swiper-slide {
+      max-width: 260px;
+      left: 75px;
+    }
+
+    &__image {
+      &__img {
+        padding:0;
+      }
+    }
+
+    &__box {
+      &__title {
+        margin: 20px 0 31px;
+      }
+    }
+  }
+}
+
+

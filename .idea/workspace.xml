@@ -21,11 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7b6257e1-41fa-4dcc-a915-cba3c9691669" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burgers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burgers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/_burgers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_burgers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_ingredients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_ingredients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_location.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_location.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/_story.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/_story.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +202,42 @@
       <option name="project" value="LOCAL" />
       <updated>1679243569344</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add swiper in burgers with my style..  done))">
+      <created>1679244815905</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679244815905</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add swiper in burgers with my style..  done))">
+      <created>1679245288082</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679245288082</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add screen 1380px">
+      <created>1679250367049</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679250367049</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add screen 1380px">
+      <created>1679253969989</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679253969989</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add more style, btn, lint ...">
+      <created>1679254987984</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679254987984</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +264,10 @@
     <MESSAGE value="add more burger in data for test" />
     <MESSAGE value="add swiper in ingredients with buldIn style.." />
     <MESSAGE value="add swiper in ingredients with my style.." />
-    <option name="LAST_COMMIT_MESSAGE" value="add swiper in ingredients with my style.." />
+    <MESSAGE value="add swiper in burgers with my style..  done))" />
+    <MESSAGE value="add screen 1380px" />
+    <MESSAGE value="add more style, btn, lint ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="add more style, btn, lint ..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1679070351342">
@@ -250,27 +294,31 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="584" y="354" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1678113295929" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1679243459477">
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1679266716246">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1679243459477" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1679266716246" />
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1679172861768" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1679243459476">
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1679262476570" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1679266716244">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1679243459476" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1679266716244" />
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1679172861766" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1679243459473">
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1679262476568" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1679266716244">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.820@0.0.1440.900" timestamp="1679077577282" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1679243459473" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1679266716244" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1679172861766" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1679243459476">
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1679262476567" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1679266716245">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1679243459476" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1679266716245" />
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1679172861767" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1679262476569" />
     <state x="144" y="79" key="MergeDialog" timestamp="1679225840486">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -280,18 +328,18 @@
     </state>
     <state x="210" y="46" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1679054673469" />
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1678113140041" />
-    <state x="298" y="145" key="Vcs.Push.Dialog.v2" timestamp="1679243572423">
+    <state x="298" y="145" key="Vcs.Push.Dialog.v2" timestamp="1679254991870">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="283" y="124" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1679053180528" />
-    <state x="298" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1679243572423" />
+    <state x="298" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1679254991870" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1679151356658">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1679151356658" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1679154592970">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1679257219140">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1679154592970" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1679257219140" />
   </component>
 </project>

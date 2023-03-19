@@ -30,6 +30,7 @@
 
   &__image {
     display: flex;
+    align-items: flex-start;
 
     &__img {
       object-fit: cover;
@@ -43,7 +44,73 @@
   .story {
     max-width: 1380px;
     &__wrapper {
+      gap: 20px;
       max-width: 1065px;
     }
+    &__card {
+      &__title {
+        margin-bottom: 0;
+      }
+
+      &__text {
+        margin-bottom: 20px;
+      }
+    }
+    &__image {
+      align-items: stretch;
+
+      &__img {
+        max-width: 520px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .story {
+    max-width: 1080px;
+    &__wrapper {
+      display: block;
+      max-width: 765px;
+    }
+    &__card {
+      max-width: 765px;
+      position: relative;
+      margin-bottom: 475px;
+      //padding-left: 20px;
+
+      &__title {
+        @include textProp(45px, 55px, 900);
+        color: #fdf2e6;
+        margin-bottom: 10px;
+      }
+
+      &__text {
+        @include textProp(14px, 25px, bold);
+        color: #fdf2e6;
+
+        margin-bottom: 12px;
+      }
+    }
+
+    &__text {
+      @include textProp(14px, 25px, 400);
+      color: #fdf2e6;
+    }
+
+    &__image {
+      position: absolute;
+      top: 1175px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      align-items: flex-start;
+      background-color: #000000;
+
+      &__img {
+        max-width: 1080px;
+      }
+    }
+
   }
 }

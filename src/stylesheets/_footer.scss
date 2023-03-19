@@ -1,3 +1,5 @@
+@import "mixins";
+
 .footer {
   display: flex;
   overflow: hidden;
@@ -40,10 +42,16 @@
   .footer {
     max-width: 1380px;
     &__wrapper {
-      margin: 29px 0;
-      display: flex;
       gap: 783px;
-      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .footer {
+    max-width: 1080px;
+    &__wrapper {
+      gap: 435px;
     }
   }
 }
