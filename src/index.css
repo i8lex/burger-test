@@ -263,6 +263,7 @@
   color: #2A2A2A;
 }
 .ingredients__box__card {
+  margin: 15px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,9 +272,14 @@
   padding: 20px 0;
   gap: 20px;
   width: 229px;
+  height: 242px;
   background: #FFFFFF 0 0 no-repeat padding-box;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
   border-radius: 26px;
+}
+.ingredients__box__card:hover {
+  transition: 250ms ease-in-out;
+  transform: scale(1.05);
 }
 .ingredients__image-box {
   display: flex;
