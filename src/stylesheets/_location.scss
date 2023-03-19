@@ -2,8 +2,9 @@
 
 
 .location {
-  margin-bottom: 150px;
+  margin: 0 auto 150px;
   @include flex-column-center;
+  overflow: hidden;
 
   &__wrapper {
    @include flex-column-center;
@@ -45,6 +46,7 @@
 
 @media screen and (max-width: 1380px) {
   .location {
+    max-width: 1380px;
     &__wrapper {
       max-width: 1065px;
     }

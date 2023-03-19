@@ -1,7 +1,8 @@
 @import "mixins";
 
 .ingredients {
-  margin-bottom: 150px;
+  margin: 0 auto 150px;
+  overflow: hidden;
   @include flex-column-center;
 
   &__wrapper {
@@ -73,5 +74,11 @@
   &__text {
     @include textProp(18px, 27px, normal);
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .ingredients {
+   max-width: 1380px;
   }
 }

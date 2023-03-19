@@ -10,12 +10,18 @@
 @import "~@tomtom-international/web-sdk-maps/dist/maps.css";
 
 
-#root {
-  @include flex-column-center;
-}
+body {
+  overflow-x: hidden;}
 
 .container {
   margin: 0 auto;
   max-width: 1920px;
+}
+
+@media screen and (max-width: 1380px) {
+  .container{
+  max-width: 1380px;
+  }
+
 }
 

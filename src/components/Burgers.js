@@ -39,33 +39,35 @@ export const Burgers = () => {
   };
   return (
     <section className="burgers">
-      <h4 className="burgers__title">Burgers</h4>
-      <div className="burgers__wrapper">
-        <div
-          className="burger__swiper-container burgers__swiper-container"
-          onLoad={initSwiper}
-        >
-          <div className="swiper-wrapper">
-            {Object.values(burgers).map((burger) => {
-              return (
-                <div
-                  className="swiper-slide burgers__swiper-slide"
-                  key={burger.id}
-                >
-                  <Card
-                    key={burger.name}
-                    name={burger.name}
-                    image={burger.image2x}
-                    link={burger.link}
-                  />
-                </div>
-              );
-            })}
+      <div className="container">
+        <h4 className="burgers__title">Burgers</h4>
+        <div className="burgers__wrapper">
+          <div
+            className="burger__swiper-container burgers__swiper-container"
+            onLoad={initSwiper}
+          >
+            <div className="swiper-wrapper">
+              {Object.values(burgers).map((burger) => {
+                return (
+                  <div
+                    className="swiper-slide burgers__swiper-slide"
+                    key={burger.id}
+                  >
+                    <Card
+                      key={burger.name}
+                      name={burger.name}
+                      image={burger.image2x}
+                      link={burger.link}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
 
-      <button className="burgers__btn">Order now</button>
+        <button className="burgers__btn">Order now</button>
+      </div>
     </section>
   );
 };

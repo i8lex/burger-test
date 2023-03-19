@@ -6,15 +6,19 @@
   width: 100%;
   position: fixed;
   left: 50%;
+  top: 0;
   transform: translateX(-50%);
   background-color: #FFFFFF;
   z-index: 99;
   display: flex;
   //justify-content: flex-start;
   align-items: center;
+  -webkit-box-shadow: 0 5px 38px 46px rgba(255,255,255,1);
+  -moz-box-shadow: 0 5px 38px 46px rgba(255,255,255,1);
+  box-shadow: 0 5px 38px 46px rgba(255,255,255,1);
 
   &__wrapper {
-    margin: 29px 0;
+    margin: 29px 0 0;
     display: flex;
     align-items: center;
   }
