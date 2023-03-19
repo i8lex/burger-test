@@ -1,6 +1,4 @@
 import React from "react";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
 import { ingredients } from "../data/data";
 
 const Card = ({ name, image, maxWidth }) => {
@@ -22,18 +20,6 @@ const Card = ({ name, image, maxWidth }) => {
 };
 
 export const Ingredients = () => {
-  const responsive = {
-    0: {
-      items: 1,
-    },
-    768: {
-      items: 2,
-    },
-    1024: {
-      items: 4,
-    },
-  };
-
   return (
     <section className="ingredients">
       <div className="container">
@@ -43,26 +29,17 @@ export const Ingredients = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             mollis id arcu vel maximus.
           </h6>
-          <AliceCarousel
-            mouseTracking
-            dotsDisabled={false}
-            buttonsDisabled={false}
-            mouseTrackingEnabled={true}
-            items={Object.values(ingredients).map(
-              ({ name, image2x, maxWidth }) => {
-                return (
-                  <Card
-                    key={name}
-                    name={name}
-                    image={image2x}
-                    maxWidth={maxWidth}
-                  />
-                );
-              }
-            )}
-            responsive={responsive}
-            infinite
-          />
+          {Object.values(ingredients).map(({ name, image2x, maxWidth }) => {
+            return (
+              <Card
+                key={name}
+                name={name}
+                image={image2x}
+                maxWidth={maxWidth}
+              />
+            );
+          })}
+
           <p className="ingredients__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
             consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue,
