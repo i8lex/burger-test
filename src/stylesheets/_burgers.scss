@@ -1,13 +1,15 @@
 @import "mixins";
 
 .burgers {
-  margin-bottom: 150px;
+  margin:0 auto 150px;
+  max-width: 1373px;
   @include flex-column-center;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 36px;
+    gap: 16px;
     margin-bottom: 50px;
   }
 

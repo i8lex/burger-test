@@ -249,7 +249,8 @@
   margin-bottom: 50px;
 }
 .ingredients__box {
-  display: flex;
+  overflow: hidden;
+  max-width: 1373px;
   gap: 52px;
   margin-bottom: 50px;
 }
@@ -352,16 +353,18 @@
 }
 
 .burgers {
-  margin-bottom: 150px;
+  margin: 0 auto 150px;
+  max-width: 1373px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .burgers__wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 36px;
+  gap: 16px;
   margin-bottom: 50px;
 }
 .burgers__title {

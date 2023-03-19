@@ -11,7 +11,7 @@
 
 
 #root {
-  @include flex-column-center
+  @include flex-column-center;
 }
 
 .container {

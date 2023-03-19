@@ -29,16 +29,18 @@ export const Ingredients = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             mollis id arcu vel maximus.
           </h6>
-          {Object.values(ingredients).map(({ name, image2x, maxWidth }) => {
-            return (
-              <Card
-                key={name}
-                name={name}
-                image={image2x}
-                maxWidth={maxWidth}
-              />
-            );
-          })}
+          <div className="ingredients__box">
+            {Object.values(ingredients).map(({ name, image2x, maxWidth }) => {
+              return (
+                <Card
+                  key={name}
+                  name={name}
+                  image={image2x}
+                  maxWidth={maxWidth}
+                />
+              );
+            })}
+          </div>
 
           <p className="ingredients__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
