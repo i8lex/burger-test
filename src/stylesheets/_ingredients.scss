@@ -23,7 +23,6 @@
   }
 
   &__swiper-container {
-    position: relative;
     //max-width: 1200px;
 
   }
@@ -34,6 +33,7 @@
   }
 
   &__box {
+    position: relative;
     overflow: hidden;
     max-width: 1373px;
     padding: 50px 0;
@@ -58,6 +58,26 @@
         transition: 250ms ease-in-out;
         transform: scale(1.05);
       }
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 184px;
+    height: 302px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    /* UI Properties */
+    background: transparent linear-gradient(270deg, #FFFFFF 0, #FFFFFF00 100%) 0 0 no-repeat padding-box;
+    &-right {
+      position: absolute;
+      z-index: 2;
+      width: 184px;
+      height: 302px;
+      right: -1px;
+      transform: matrix(-1, 0, 0, -1, 0, 0);
+      background: transparent linear-gradient(90deg, #ffffff 0, #FFFFFF00 100%) 0 0 no-repeat padding-box;
     }
   }
 

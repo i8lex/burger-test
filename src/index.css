@@ -631,14 +631,12 @@
   text-align: center;
   max-width: 690px;
 }
-.ingredients__swiper-container {
-  position: relative;
-}
 .ingredients__swiper-slide {
   max-width: 281px;
   right: 0;
 }
 .ingredients__box {
+  position: relative;
   overflow: hidden;
   max-width: 1373px;
   padding: 50px 0;
@@ -670,6 +668,25 @@
 .ingredients__box__card:hover {
   transition: 250ms ease-in-out;
   transform: scale(1.05);
+}
+.ingredients__shadow {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 184px;
+  height: 302px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  /* UI Properties */
+  background: transparent linear-gradient(270deg, #FFFFFF 0, rgba(255, 255, 255, 0) 100%) 0 0 no-repeat padding-box;
+}
+.ingredients__shadow-right {
+  position: absolute;
+  z-index: 2;
+  width: 184px;
+  height: 302px;
+  right: -1px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  background: transparent linear-gradient(90deg, #ffffff 0, rgba(255, 255, 255, 0) 100%) 0 0 no-repeat padding-box;
 }
 .ingredients__image-box {
   padding-top: 20px;

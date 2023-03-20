@@ -54,6 +54,8 @@ export const Ingredients = () => {
             mollis id arcu vel maximus.
           </h6>
           <div className="ingredients__box">
+            <div className="ingredients__shadow">{}</div>
+            <div className="ingredients__shadow-right">{}</div>
             <div
               className="swiper-container ingredients__swiper-container"
               onLoad={initSwiper}
