@@ -234,6 +234,7 @@
 .footer {
   max-width: 1920px;
   width: 100%;
+  overflow: hidden;
   align-items: center;
   background: #F5F5F5 0 0 no-repeat padding-box;
   margin: 0 auto 150px;
@@ -276,16 +277,25 @@
 }
 
 @media screen and (max-width: 1380px) {
+  .footer {
+    max-width: 1380px;
+  }
   .footer__wrapper {
     padding: 15px 155px;
   }
 }
 @media screen and (max-width: 1080px) {
+  .footer {
+    max-width: 1080px;
+  }
   .footer__wrapper {
     padding: 15px 70px;
   }
 }
 @media screen and (max-width: 780px) {
+  .footer {
+    max-width: 765px;
+  }
   .footer__wrapper {
     gap: 210px;
   }
@@ -295,6 +305,7 @@
 }
 @media screen and (max-width: 500px) {
   .footer {
+    max-width: 500px;
     margin-bottom: 0;
   }
   .footer__wrapper {
@@ -533,7 +544,7 @@
 @media screen and (max-width: 500px) {
   .main {
     margin: 135px 0 50px;
-    max-width: 400px;
+    max-width: 450px;
   }
   .main__wrapper {
     max-width: 380px;
@@ -577,7 +588,7 @@
     z-index: 2;
   }
   .main__background {
-    max-width: 400px;
+    max-width: 500px;
   }
   .main__background__image {
     width: 1000px;
