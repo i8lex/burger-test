@@ -24,13 +24,13 @@
 
   &__swiper-container {
     position: relative;
-    max-width: 1072px;
+    //max-width: 1200px;
 
   }
 
   &__swiper-slide {
     max-width: 281px;
-    right: 125px;
+    right: 0;
   }
 
   &__box {
@@ -52,7 +52,7 @@
       background: #FFFFFF 0 0 no-repeat padding-box;
       box-shadow: 0 3px 6px #00000029;
       border-radius: 26px;
-      z-index: 5;
+      z-index: 1;
 
       &:hover {
         transition: 250ms ease-in-out;

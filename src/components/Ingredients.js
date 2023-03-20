@@ -36,7 +36,7 @@ export const Ingredients = () => {
       document.body.clientWidth;
     swiper.current = new Swiper(".swiper-container", {
       loop: false,
-      spaceBetween: 0,
+      spaceBetween: 10,
       slidesPerView: getWindowWidth() >= 768 ? 4 : 3,
       centeredSlides: true,
       grabCursor: true,

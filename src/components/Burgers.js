@@ -28,15 +28,16 @@ export const Burgers = () => {
   const initSwiper = () => {
     swiper.current = new Swiper(".burger__swiper-container", {
       loop: true,
-      centeredSlides: true,
+      // centeredSlides: true,
       spaceBetween: 20,
       watchSlidesVisibility: true,
-      centerInsufficientSlides: true,
+      // centerInsufficientSlides: true,
       slidesPerView: 3,
       slidesPerGroup: 1,
       initialSlide: 0,
       grabCursor: true,
       mousewheel: true,
+      // cssMode: true,
       // autoplay: true,
     });
   };
