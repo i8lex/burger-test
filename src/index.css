@@ -828,9 +828,6 @@
     max-width: 140px;
     max-height: 162px;
   }
-  .ingredients__image-box img {
-    max-width: 100px !important;
-  }
   .ingredients__text {
     max-width: 510px;
     font-family: "Poppins", sans-serif;
@@ -1167,6 +1164,7 @@
   color: #2A2A2A;
 }
 .burgers__swiper-container {
+  position: relative;
   max-width: 1372px;
   padding: 50px 0;
   overflow: hidden;
@@ -1175,6 +1173,27 @@
   max-width: 440px !important;
   width: 100%;
   left: 22px;
+}
+.burgers__shadow {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 0;
+  width: 184px;
+  height: 480px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  /* UI Properties */
+  background: transparent linear-gradient(270deg, #FFFFFF 0, rgba(255, 255, 255, 0) 100%) 0 0 no-repeat padding-box;
+}
+.burgers__shadow-right {
+  position: absolute;
+  z-index: 2;
+  width: 184px;
+  height: 480px;
+  top: 20%;
+  right: -1px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  background: transparent linear-gradient(90deg, #ffffff 0, rgba(255, 255, 255, 0) 100%) 0 0 no-repeat padding-box;
 }
 .burgers__box {
   display: flex;
@@ -1258,7 +1277,7 @@
 
 @media screen and (max-width: 1380px) {
   .burgers__swiper-slide {
-    left: 0;
+    left: 25px;
   }
   .burgers__image__img {
     padding: 0;
@@ -1282,6 +1301,9 @@
     font-style: normal;
     letter-spacing: 0;
     color: #2A2A2A;
+  }
+  .burgers__swiper-slide {
+    left: 0;
   }
   .burgers__image__img {
     padding: 0;

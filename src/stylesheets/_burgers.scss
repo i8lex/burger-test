@@ -17,14 +17,38 @@
   }
 
   &__swiper-container {
+    position: relative;
     max-width: 1372px;
     padding: 50px 0;
     overflow: hidden;
   }
+
   &__swiper-slide {
     max-width: 440px !important;
     width: 100%;
     left: 22px;
+  }
+
+  &__shadow {
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 0;
+    width: 184px;
+    height: 480px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    /* UI Properties */
+    background: transparent linear-gradient(270deg, #FFFFFF 0, #FFFFFF00 100%) 0 0 no-repeat padding-box;
+    &-right {
+      position: absolute;
+      z-index: 2;
+      width: 184px;
+      height: 480px;
+      top: 20%;
+      right: -1px;
+      transform: matrix(-1, 0, 0, -1, 0, 0);
+      background: transparent linear-gradient(90deg, #ffffff 0, #FFFFFF00 100%) 0 0 no-repeat padding-box;
+    }
   }
 
   &__box {
@@ -89,18 +113,12 @@
 
 @media screen and (max-width: 1380px) {
   .burgers {
-    &__wrapper {
-      //max-width: 880px;
-
-    }
 
     &__swiper-container {
-      //max-width: 880px;
     }
 
     &__swiper-slide {
-      //max-width: 260px;
-      left: 0;
+      left: 25px;
     }
 
     &__image {
@@ -110,7 +128,6 @@
     }
 
     &__box {
-      //max-width: 440px;
       &__title {
         margin: 20px 0 31px;
       }
@@ -131,12 +148,8 @@
       @include textProp(45px, 55px, 900);
     }
 
-    &__swiper-container {
-      //max-width: 880px;
-    }
-
     &__swiper-slide {
-      //max-width: 260px;
+      left: 0;
     }
 
     &__image {
@@ -164,15 +177,6 @@
       @include textProp(35px, 35px, 900);
     }
 
-    &__swiper-container {
-      //max-width: 500px;
-    }
-
-    &__swiper-slide {
-      //width: 360px !important;
-      //left: 90px;
-    }
-
     &__image {
       &__img {
         max-width: 100px;
@@ -182,10 +186,8 @@
     }
 
     &__box {
-      //width: 320px;
       &__title {
         @include textProp(15px, 24px, 700);
-
         margin: 20px 0;
       }
     }

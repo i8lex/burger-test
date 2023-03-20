@@ -70,6 +70,9 @@ export const Burgers = () => {
               </div>
             </div>
           </div>
+          <div className="burgers__shadow">{}</div>
+          <div className="burgers__shadow-right">{}</div>
+
           <button className="burgers__btn">Order now</button>
         </div>
       </div>
