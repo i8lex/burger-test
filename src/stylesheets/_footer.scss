@@ -1,16 +1,19 @@
 @import "mixins";
 
 .footer {
-  display: flex;
-  overflow: hidden;
+  max-width: 1920px;
+  width: 100%;
+  //display: flex;
+  //overflow: hidden;
   align-items: center;
   background: #F5F5F5 0 0 no-repeat padding-box;
   margin: 0 auto 150px;
 
   &__wrapper {
+    padding: 15px 284px;
     margin: 29px 0;
     display: flex;
-    gap: 1013px;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -42,7 +45,8 @@
   .footer {
     //max-width: 1380px;
     &__wrapper {
-      gap: 783px;
+      padding: 15px 155px;
+      //gap: 783px;
     }
   }
 }
@@ -51,7 +55,8 @@
   .footer {
     //max-width: 1080px;
     &__wrapper {
-      gap: 435px;
+      padding: 15px 70px;
+      //gap: 435px;
     }
   }
 }
@@ -60,7 +65,7 @@
   .footer {
     //max-width: 765px;
     &__wrapper {
-      gap: 90px;
+      gap: 210px;
     }
 
     &__logo {

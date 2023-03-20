@@ -8,10 +8,12 @@ export const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setOffset(-150);
-      } else {
+      if (window.innerWidth >= 200 && window.innerWidth <= 500) {
+        setOffset(-140);
+      } else if (window.innerWidth >= 500 && window.innerWidth <= 780) {
         setOffset(-100);
+      } else {
+        setOffset(-150);
       }
     };
 

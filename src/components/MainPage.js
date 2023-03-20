@@ -4,7 +4,6 @@ import background from "../images/background@2x.png";
 // import {Link} from "react-router-dom";
 import { Link } from "react-scroll";
 import { ROUTES } from "../constants";
-import { useMediaQuery } from "@material-ui/core";
 
 export const MainPage = () => {
   return (

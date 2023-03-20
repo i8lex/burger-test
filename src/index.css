@@ -186,6 +186,7 @@
   }
   .header__logo {
     grid-column: 1/2;
+    margin-left: 5px;
   }
   .header__logo__image {
     max-width: 150px;
@@ -195,6 +196,7 @@
     grid-row: 2/3;
     margin-left: 0;
     gap: 15px;
+    justify-content: space-evenly;
   }
   .header__link {
     font-family: "Poppins", sans-serif;
@@ -230,16 +232,17 @@
   }
 }
 .footer {
-  display: flex;
-  overflow: hidden;
+  max-width: 1920px;
+  width: 100%;
   align-items: center;
   background: #F5F5F5 0 0 no-repeat padding-box;
   margin: 0 auto 150px;
 }
 .footer__wrapper {
+  padding: 15px 284px;
   margin: 29px 0;
   display: flex;
-  gap: 1013px;
+  justify-content: space-between;
   align-items: center;
 }
 .footer__logo {
@@ -274,17 +277,17 @@
 
 @media screen and (max-width: 1380px) {
   .footer__wrapper {
-    gap: 783px;
+    padding: 15px 155px;
   }
 }
 @media screen and (max-width: 1080px) {
   .footer__wrapper {
-    gap: 435px;
+    padding: 15px 70px;
   }
 }
 @media screen and (max-width: 780px) {
   .footer__wrapper {
-    gap: 90px;
+    gap: 210px;
   }
   .footer__logo__image {
     max-width: 250px;
@@ -848,7 +851,7 @@
 @media screen and (max-width: 500px) {
   .ingredients {
     max-width: 400px;
-    margin: 0 auto 50px;
+    margin: 0 auto 100px;
   }
   .ingredients__title {
     font-family: "Poppins", sans-serif;
@@ -1097,7 +1100,7 @@
 }
 @media screen and (max-width: 500px) {
   .story {
-    margin: 0 auto -350px;
+    margin: 0 auto -300px;
     max-width: 400px;
   }
   .story__wrapper {
