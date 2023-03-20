@@ -136,7 +136,7 @@
 }
 
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 780px) {
   .ingredients {
     max-width: 765px;
     margin: 0 auto 50px;
@@ -187,3 +187,57 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .ingredients {
+    max-width: 400px;
+    margin: 0 auto 50px;
+
+    &__title {
+      @include textProp(35px, 35px, 900);
+      margin-bottom: 14px;
+
+      &__text {
+        @include textProp(12px, 18px, bold);
+        max-width: 360px;
+      }
+    }
+
+    &__swiper-container {
+      max-width: 380px;
+
+    }
+
+    &__swiper-slide {
+      margin-left: 5px;
+      max-width: 281px;
+      right: 15px;
+    }
+
+    &__box {
+      overflow: hidden;
+      max-width: 380px;
+      padding: 30px 0;
+
+      &__card-title {
+        @include textProp(14px, 22px, 700);
+        padding-bottom: 10px;
+      }
+
+      &__card {
+        max-width: 140px;
+        max-height: 162px;
+
+      }
+    }
+    &__image-box img {
+      max-width: 100px !important;
+    }
+
+    &__text {
+      max-width: 360px;
+      @include textProp(12px, 18px, 40);
+    }
+  }
+}
+

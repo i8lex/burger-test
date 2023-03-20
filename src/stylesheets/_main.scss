@@ -11,8 +11,12 @@
 
   &__background {
     position: absolute;
-    max-height: 604px;
+    overflow: hidden;
+    max-width: 1920px;
     z-index: -1;
+    &__image {
+      max-height: 604px;
+    }
   }
 
   &__wrapper {
@@ -82,12 +86,15 @@
     }
 
     &__title {
-      @include textProp(80px, 120px, 900);
+      @include textProp(75px, 120px, 900);
       margin-bottom: 20px;
     }
 
     &__background {
       max-width: 1380px;
+      &__image {
+        max-width: 1380px;
+      }
     }
 
     &__wrapper {
@@ -131,6 +138,9 @@
 
     &__background {
       max-width: 1080px;
+      &__image {
+        max-width: 1080px;
+      }
     }
 
     &__wrapper {
@@ -149,19 +159,21 @@
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 780px) {
   .main {
     margin: 85px 0 50px;
     max-width: 765px;
 
     &__wrapper {
       max-width: 600px;
+      width: 600px;
       padding-top: 20px;
     }
 
     &__title {
       @include textProp(40px,45px, 900);
       margin-bottom: 10px;
+      white-space: nowrap;
     }
 
     &__text {
@@ -175,6 +187,9 @@
 
     &__background {
       max-width: 765px;
+      &__image {
+        max-width: 765px;
+      }
     }
 
 
@@ -185,6 +200,68 @@
     &__logo {
       &__image {
         max-width: 245px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    margin: 135px 0 50px;
+    max-width: 400px;
+
+    &__wrapper {
+      max-width: 380px;
+      justify-content: center;
+      //width: 600px;
+      padding-top: 0;
+      position: relative;
+    }
+
+    &__title {
+      @include textProp(40px,45px, 900);
+      margin-bottom: 0;
+      white-space: nowrap;
+      z-index: 2;
+    }
+
+    &__text {
+      @include textProp(12px, 20px, bold);
+      align-self: flex-end;
+      z-index: 2;
+      margin-bottom: 270px;
+
+    }
+
+    &__button {
+      padding: 12px 90px;
+      @include textProp(12px, 20px, bold);
+      z-index: 2;
+
+    }
+
+    &__background {
+      max-width: 400px;
+      &__image {
+        width: 1000px;
+      }
+    }
+
+
+    &__box {
+      padding-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__logo {
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      &__image {
+        max-width: 580px;
+        width: 300px;
       }
     }
   }

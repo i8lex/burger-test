@@ -31,7 +31,7 @@ export const Burgers = () => {
       centeredSlides: true,
       spaceBetween: 20,
       watchSlidesVisibility: true,
-      centerInsufficientSlides: false,
+      centerInsufficientSlides: true,
       slidesPerView: 3,
       slidesPerGroup: 1,
       initialSlide: 0,

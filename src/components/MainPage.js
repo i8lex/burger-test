@@ -8,7 +8,9 @@ import { ROUTES } from "../constants";
 export const MainPage = () => {
   return (
     <section className="main">
-      <img src={background} alt="" className="main__background" />
+      <div className="main__background">
+        <img src={background} alt="" className="main__background__image" />
+      </div>
       <div className="container">
         <div className="main__wrapper">
           <div className="main__box">
