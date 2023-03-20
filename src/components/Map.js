@@ -12,6 +12,9 @@ const Map = () => {
       if (width <= 375) {
         setMapWidth("375px");
         setMapHeight("300px");
+      } else if (width <= 765) {
+        setMapWidth("480px");
+        setMapHeight("400px");
       } else if (width <= 1080) {
         setMapWidth("600px");
         setMapHeight("450px");

@@ -28,45 +28,49 @@ export const Burgers = () => {
   const initSwiper = () => {
     swiper.current = new Swiper(".burger__swiper-container", {
       loop: true,
-      spaceBetween: 16,
       centeredSlides: true,
-      slidesPerView: "3",
+      spaceBetween: 20,
+      watchSlidesVisibility: true,
+      centerInsufficientSlides: false,
+      slidesPerView: 3,
       slidesPerGroup: 1,
+      initialSlide: 0,
       grabCursor: true,
-      autoplay: true,
-      initialSlide: 1,
+      mousewheel: true,
+      // autoplay: true,
     });
   };
   return (
     <section className="burgers">
       <div className="container">
-        <h4 className="burgers__title">Burgers</h4>
-        <div className="burgers__wrapper">
-          <div
-            className="burger__swiper-container burgers__swiper-container"
-            onLoad={initSwiper}
-          >
-            <div className="swiper-wrapper">
-              {Object.values(burgers).map((burger) => {
-                return (
-                  <div
-                    className="swiper-slide burgers__swiper-slide"
-                    key={burger.id}
-                  >
-                    <Card
-                      key={burger.name}
-                      name={burger.name}
-                      image={burger.image2x}
-                      link={burger.link}
-                    />
-                  </div>
-                );
-              })}
+        <div className="burgers__container">
+          <h4 className="burgers__title">Burgers</h4>
+          <div className="burgers__wrapper">
+            <div
+              className="burger__swiper-container burgers__swiper-container"
+              onLoad={initSwiper}
+            >
+              <div className="swiper-wrapper">
+                {Object.values(burgers).map((burger) => {
+                  return (
+                    <div
+                      className="swiper-slide burgers__swiper-slide"
+                      key={burger.id}
+                    >
+                      <Card
+                        key={burger.name}
+                        name={burger.name}
+                        image={burger.image2x}
+                        link={burger.link}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
+          <button className="burgers__btn">Order now</button>
         </div>
-
-        <button className="burgers__btn">Order now</button>
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ export const Footer = () => {
             <img className="footer__logo__image" src={logo} alt="Burger logo" />
           </Link>
           <div className="footer__box">
-            <h6 className="footer__title">{adress.name}</h6>
+            <h6 className="footer__text">{adress.name}</h6>
             <p className="footer__text">{adress.street}</p>
             <p className="footer__text">{adress.city}</p>
             <p className="footer__text">{adress.phone}</p>

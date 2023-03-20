@@ -29,8 +29,15 @@ export const ingredients = {
     image2x: require("../images/cheese@2x.png"),
     maxWidth: "138px",
   },
-  buns1: {
+  meet: {
     id: 5,
+    name: "meet",
+    image: require("../images/meet.png"),
+    image2x: require("../images/meet@2x.png"),
+    maxWidth: "138px",
+  },
+  buns1: {
+    id: 6,
     name: "buns",
     image: require("../images/bun.png"),
     image2x: require("../images/bun@2x.png"),
@@ -38,7 +45,7 @@ export const ingredients = {
   },
 
   salad1: {
-    id: 6,
+    id: 7,
     name: "salad",
     image: require("../images/salad.png"),
     image2x: require("../images/salad@2x.png"),
@@ -46,21 +53,28 @@ export const ingredients = {
   },
 
   tomato1: {
-    id: 7,
+    id: 8,
     name: "tomato",
     image: require("../images/tomato.png"),
     image2x: require("../images/tomato@2x.png"),
     maxWidth: "138px",
   },
-  cheese1: {
-    id: 8,
+  cheese9: {
+    id: 9,
     name: "cheese",
     image: require("../images/cheese.png"),
     image2x: require("../images/cheese@2x.png"),
     maxWidth: "138px",
   },
+  meet1: {
+    id: 10,
+    name: "meet",
+    image: require("../images/meet.png"),
+    image2x: require("../images/meet@2x.png"),
+    maxWidth: "138px",
+  },
   buns2: {
-    id: 9,
+    id: 11,
     name: "buns",
     image: require("../images/bun.png"),
     image2x: require("../images/bun@2x.png"),
@@ -68,7 +82,7 @@ export const ingredients = {
   },
 
   salad2: {
-    id: 10,
+    id: 12,
     name: "salad",
     image: require("../images/salad.png"),
     image2x: require("../images/salad@2x.png"),
@@ -76,17 +90,24 @@ export const ingredients = {
   },
 
   tomato2: {
-    id: 11,
+    id: 13,
     name: "tomato",
     image: require("../images/tomato.png"),
     image2x: require("../images/tomato@2x.png"),
     maxWidth: "138px",
   },
   cheese2: {
-    id: 12,
+    id: 14,
     name: "cheese",
     image: require("../images/cheese.png"),
     image2x: require("../images/cheese@2x.png"),
+    maxWidth: "138px",
+  },
+  meet2: {
+    id: 15,
+    name: "meet",
+    image: require("../images/meet.png"),
+    image2x: require("../images/meet@2x.png"),
     maxWidth: "138px",
   },
 };

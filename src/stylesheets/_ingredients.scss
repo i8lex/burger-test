@@ -142,7 +142,7 @@
     margin: 0 auto 50px;
 
     &__title {
-      @include textProp(25px, 35px, 900);
+      @include textProp(35px, 35px, 900);
       margin-bottom: 14px;
 
       &__text {

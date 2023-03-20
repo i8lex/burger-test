@@ -28,13 +28,13 @@
     width: 131px;
   }
 
-  &__title {
-    @include textProp(14px, 21px, 700);
-  }
+
 
   &__text {
     @include textProp(14px, 21px, 400);
-
+    &:first-child {
+      @include textProp(14px, 21px, 700);
+    }
   }
 }
 
@@ -52,6 +52,21 @@
     max-width: 1080px;
     &__wrapper {
       gap: 435px;
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .footer {
+    max-width: 765px;
+    &__wrapper {
+      gap: 90px;
+    }
+
+    &__logo {
+      &__image {
+        max-width: 250px;
+      }
     }
   }
 }
