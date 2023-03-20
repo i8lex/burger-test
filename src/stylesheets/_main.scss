@@ -149,4 +149,44 @@
   }
 }
 
+@media screen and (max-width: 765px) {
+  .main {
+    margin: 85px 0 50px;
+    max-width: 765px;
+
+    &__wrapper {
+      max-width: 600px;
+      padding-top: 20px;
+    }
+
+    &__title {
+      @include textProp(35px,45px, 900);
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      @include textProp(12px, 20px, bold);
+    }
+
+    &__button {
+      padding: 8px 26px 7px 27px;
+      @include textProp(12px, 20px, bold);
+    }
+
+    &__background {
+      max-width: 765px;
+    }
+
+
+    &__box {
+      padding-top: 20px;
+    }
+
+    &__logo {
+      &__image {
+        max-width: 245px;
+      }
+    }
+  }
+}
 

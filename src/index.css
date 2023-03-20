@@ -128,6 +128,51 @@
     color: #2A2A2A;
   }
 }
+@media screen and (max-width: 765px) {
+  .header {
+    max-width: 765px;
+  }
+  .header__wrapper {
+    max-width: 500px;
+  }
+  .header__logo {
+    align-items: flex-start;
+  }
+  .header__logo__image {
+    max-width: 100px;
+  }
+  .header__box {
+    margin-left: 25px;
+    gap: 15px;
+  }
+  .header__link {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 18px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+  }
+  .header__button {
+    margin-left: 43px;
+    padding: 5px 18px 5px 18px;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 18px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+  }
+  .header__button:hover {
+    transition: 250ms ease-in-out;
+    transform: scale(1);
+  }
+  .header__button__active {
+    transform: scale(1.01);
+  }
+}
 .footer {
   display: flex;
   overflow: hidden;
@@ -350,6 +395,54 @@
     max-width: 320px;
   }
 }
+@media screen and (max-width: 765px) {
+  .main {
+    margin: 85px 0 50px;
+    max-width: 765px;
+  }
+  .main__wrapper {
+    max-width: 600px;
+    padding-top: 20px;
+  }
+  .main__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 45px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    margin-bottom: 10px;
+  }
+  .main__text {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+  }
+  .main__button {
+    padding: 8px 26px 7px 27px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+  }
+  .main__background {
+    max-width: 765px;
+  }
+  .main__box {
+    padding-top: 20px;
+  }
+  .main__logo__image {
+    max-width: 245px;
+  }
+}
 .ingredients {
   margin: 0 auto 150px;
   display: flex;
@@ -516,6 +609,71 @@
     color: #2A2A2A;
   }
 }
+@media screen and (max-width: 765px) {
+  .ingredients {
+    max-width: 765px;
+    margin: 0 auto 50px;
+  }
+  .ingredients__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 35px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    margin-bottom: 14px;
+  }
+  .ingredients__title__text {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    max-width: 400px;
+  }
+  .ingredients__swiper-container {
+    max-width: 450px;
+  }
+  .ingredients__swiper-slide {
+    max-width: 281px;
+    right: -5px;
+  }
+  .ingredients__box {
+    overflow: hidden;
+    max-width: 600px;
+    padding: 30px 0;
+  }
+  .ingredients__box__card-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    padding-bottom: 10px;
+  }
+  .ingredients__box__card {
+    max-width: 140px;
+    max-height: 162px;
+  }
+  .ingredients__image-box img {
+    max-width: 100px !important;
+  }
+  .ingredients__text {
+    max-width: 510px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 40;
+    line-height: 18px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+  }
+}
 .story {
   margin: 0 auto 150px;
   display: flex;
@@ -647,6 +805,66 @@
   }
   .story__image__img {
     max-width: 1080px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .story {
+    margin: 0 auto -130px;
+    max-width: 765px;
+  }
+  .story__wrapper {
+    display: block;
+    max-width: 500px;
+  }
+  .story__card {
+    max-width: 765px;
+    position: relative;
+    margin-bottom: 475px;
+  }
+  .story__card__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 35px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    color: #fdf2e6;
+    margin-bottom: 10px;
+  }
+  .story__card__text {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    color: #fdf2e6;
+    margin-bottom: 12px;
+  }
+  .story__text {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    text-shadow: 2px 1px 0 #000000, 1px 2px 0 #000000;
+    color: #fdf2e6;
+  }
+  .story__image {
+    position: absolute;
+    top: 910px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    align-items: flex-start;
+    background-color: #000000;
+  }
+  .story__image__img {
+    max-width: 765px;
   }
 }
 .burgers {

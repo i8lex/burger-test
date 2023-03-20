@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../images/logo_header@2x.png";
-// import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 import { ROUTES } from "../constants/index";
 
 export const Header = () => {
+  const [offset, setOffset] = useState(-150);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setOffset(-150);
+      } else {
+        setOffset(-100);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <header className="header">
       <div className="container">
@@ -13,7 +32,7 @@ export const Header = () => {
             className="header__logo"
             to={ROUTES.main}
             spy={true}
-            offset={-150}
+            offset={offset}
             smooth={"easeInOutQuint"}
             delay={100}
             duration={800}
@@ -27,7 +46,7 @@ export const Header = () => {
               to={ROUTES.ingredients}
               spy={true}
               smooth={"easeInOutQuint"}
-              offset={-150}
+              offset={offset}
               delay={100}
               duration={800}
             >
@@ -39,7 +58,7 @@ export const Header = () => {
               to={ROUTES.story}
               spy={true}
               smooth={"easeInOutQuint"}
-              offset={-150}
+              offset={offset}
               delay={100}
               duration={800}
             >
@@ -51,7 +70,7 @@ export const Header = () => {
               to={ROUTES.burgers}
               spy={true}
               smooth={"easeInOutQuint"}
-              offset={-150}
+              offset={offset}
               delay={100}
               duration={800}
             >
@@ -63,7 +82,7 @@ export const Header = () => {
               to={ROUTES.location}
               spy={true}
               smooth={"easeInOutQuint"}
-              offset={-150}
+              offset={offset}
               delay={100}
               duration={800}
             >
@@ -75,7 +94,7 @@ export const Header = () => {
             to={ROUTES.burgers}
             spy={true}
             smooth={"easeInOutQuint"}
-            offset={-150}
+            offset={offset}
             delay={100}
             duration={300}
           >

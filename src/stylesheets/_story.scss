@@ -114,3 +114,55 @@
 
   }
 }
+
+@media screen and (max-width: 765px) {
+  .story {
+    margin: 0 auto -130px;
+    max-width: 765px;
+    &__wrapper {
+      display: block;
+      max-width: 500px;
+    }
+    &__card {
+      max-width: 765px;
+      position: relative;
+      margin-bottom: 475px;
+      //padding-left: 20px;
+
+      &__title {
+        @include textProp(25px, 35px, 900);
+        color: #fdf2e6;
+        margin-bottom: 10px;
+
+      }
+
+      &__text {
+        @include textProp(12px, 18px, bold);
+        color: #fdf2e6;
+        margin-bottom: 12px;
+      }
+    }
+
+    &__text {
+      @include textProp(12px, 18px, 400);
+      text-shadow: 2px 1px 0 #000000, 1px 2px 0 #000000;
+      color: #fdf2e6;
+    }
+
+    &__image {
+      position: absolute;
+      top: 910px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      align-items: flex-start;
+      background-color: #000000;
+
+      &__img {
+        max-width: 765px;
+      }
+    }
+
+  }
+}
+
