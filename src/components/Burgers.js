@@ -37,6 +37,20 @@ export const Burgers = () => {
       initialSlide: 0,
       grabCursor: true,
       mousewheel: true,
+      breakpoints: {
+        // when window width is >= 320px
+        200: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 480px
+        500: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        780: {
+          slidesPerView: 3,
+        },
+      },
       // cssMode: true,
       // autoplay: true,
     });

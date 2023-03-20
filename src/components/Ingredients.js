@@ -35,13 +35,16 @@ export const Ingredients = () => {
       document.documentElement.clientWidth ||
       document.body.clientWidth;
     swiper.current = new Swiper(".swiper-container", {
+      autoplay: {
+        delay: 1000,
+      },
       loop: false,
       spaceBetween: 10,
-      slidesPerView: getWindowWidth() >= 768 ? 4 : 3,
+      slidesPerView: getWindowWidth() >= 1080 ? 4 : 3,
       centeredSlides: true,
       grabCursor: true,
-      autoplay: true,
       initialSlide: 1,
+      speed: 800,
     });
   };
   return (

@@ -144,7 +144,7 @@
 
       }
     }
-    &__image-box img {
+    &__image-box >img {
         max-width: 100px !important;
     }
 
@@ -171,9 +171,15 @@
       }
     }
 
+    &__shadow {
+      width: 50px;
+      &-right {
+        width: 50px;
+      }
+    }
+
     &__swiper-container {
       max-width: 450px;
-
     }
 
     &__swiper-slide {

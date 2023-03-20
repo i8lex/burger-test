@@ -179,7 +179,6 @@
 
     &__image {
       &__img {
-        max-width: 100px;
         padding:0;
         margin-bottom: 20px;
       }
@@ -189,6 +188,13 @@
       &__title {
         @include textProp(15px, 24px, 700);
         margin: 20px 0;
+      }
+    }
+
+    &__shadow {
+      width: 50px;
+      &-right {
+        width: 50px;
       }
     }
 
@@ -231,7 +237,7 @@
 
     &__image {
       &__img {
-        max-width: 100px;
+        //max-width: 100px;
         padding:0;
         margin-bottom: 20px;
       }
@@ -240,18 +246,20 @@
     &__box {
       //width: 320px;
       &__title {
-        @include textProp(10px, 24px, 700);
+        @include textProp(25px, 32px, 700);
 
         margin: 20px 0;
       }
     }
 
     &__container {
-      //@include flex-column-center;
+      @include flex-column-center;
     }
     &__btn {
-      margin: 0 0 20px 20px;
-      @include textProp(14px, 18px, 700);
+      margin: 0;
+      padding: 30px 5px;
+      white-space: nowrap;
+      @include textProp(25px, 14px, 700);
       text-align: center;
     }
     &__link {
