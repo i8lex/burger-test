@@ -65,13 +65,17 @@ export const Ingredients = () => {
             >
               <div className="swiper-wrapper">
                 {Object.values(ingredients).map(
-                  ({ id, name, image2x, maxWidth }) => {
+                  ({ id, name, image, image2x, maxWidth }) => {
                     return (
                       <div
                         className="swiper-slide ingredients__swiper-slide"
                         key={id}
                       >
-                        <Card name={name} image={image2x} maxWidth={maxWidth} />
+                        <Card
+                          name={name}
+                          image={window.innerWidth <= 780 ? image : image2x}
+                          maxWidth={maxWidth}
+                        />
                       </div>
                     );
                   }

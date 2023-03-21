@@ -75,7 +75,11 @@ export const Burgers = () => {
                       <Card
                         key={burger.name}
                         name={burger.name}
-                        image={burger.image2x}
+                        image={
+                          window.innerWidth <= 780
+                            ? burger.image
+                            : burger.image2x
+                        }
                         link={burger.link}
                       />
                     </div>

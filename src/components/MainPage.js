@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../images/logo@x2.png";
-import background from "../images/background@2x.png";
+// import logo from "../images/logo@x2.png";
+import { images } from "../data/data";
+// import background from "../images/background@2x.png";
 // import {Link} from "react-router-dom";
 import { Link } from "react-scroll";
 import { ROUTES } from "../constants";
@@ -9,7 +10,13 @@ export const MainPage = () => {
   return (
     <section className="main">
       <div className="main__background">
-        <img src={background} alt="" className="main__background__image" />
+        <img
+          src={
+            window.innerWidth <= 780 ? images.background : images.background2x
+          }
+          alt=""
+          className="main__background__image"
+        />
       </div>
       <div className="container">
         <div className="main__wrapper">
@@ -30,7 +37,11 @@ export const MainPage = () => {
             </Link>
           </div>
           <div className="main__logo">
-            <img src={logo} alt="Logo" className="main__logo__image" />
+            <img
+              src={window.innerWidth <= 780 ? images.logo : images.logo2x}
+              alt="Logo"
+              className="main__logo__image"
+            />
           </div>
         </div>
       </div>

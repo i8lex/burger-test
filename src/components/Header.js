@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from "react";
-import logo from "../images/logo_header@2x.png";
+// import logo from "../images/logo_header@2x.png";
 import { Link } from "react-scroll";
 import { ROUTES } from "../constants/index";
+import { images } from "../data/data";
 
 export const Header = () => {
   const [offset, setOffset] = useState(-150);
+  const [logo, setLogo] = useState("");
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 200 && window.innerWidth <= 500) {
         setOffset(-140);
+        setLogo(images.logo_header);
       } else if (window.innerWidth >= 500 && window.innerWidth <= 780) {
         setOffset(-100);
+        setLogo(images.logo_header);
       } else {
         setOffset(-150);
+        setLogo(images.logo_header2x);
       }
     };
 

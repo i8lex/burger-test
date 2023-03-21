@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../images/rectangle10@2x.png";
+// import image from "../images/rectangle10@2x.png";
+import { images } from "../data/data";
 
 export const Story = () => {
   return (
@@ -26,7 +27,11 @@ export const Story = () => {
           <div className="story__image">
             <img
               className="story__image__img"
-              src={image}
+              src={
+                window.innerWidth <= 780
+                  ? images.rectangle10
+                  : images.rectangle102x
+              }
               alt="Burger with potatoes"
             />
           </div>
