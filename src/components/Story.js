@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import image from "../images/rectangle10@2x.png";
 import { images } from "../data/data";
 
 export const Story = () => {
+  const [image, setImage] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 780) {
+        setImage(images.rectangle10);
+      } else {
+        setImage(images.rectangle102x);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <section className="story">
       <div className="container">
@@ -27,11 +45,7 @@ export const Story = () => {
           <div className="story__image">
             <img
               className="story__image__img"
-              src={
-                window.innerWidth <= 780
-                  ? images.rectangle10
-                  : images.rectangle102x
-              }
+              src={image}
               alt="Burger with potatoes"
             />
           </div>

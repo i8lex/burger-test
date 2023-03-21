@@ -13,6 +13,7 @@
     padding: 15px 284px;
     margin: 29px 0;
     display: flex;
+    gap: 1013px;
     justify-content: space-between;
     align-items: center;
   }
@@ -46,7 +47,7 @@
     max-width: 1380px;
     &__wrapper {
       padding: 15px 155px;
-      //gap: 783px;
+      gap: 0;
     }
   }
 }

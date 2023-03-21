@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import Swiper from "swiper";
-
 import { ingredients } from "../data/data";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper.min.css";

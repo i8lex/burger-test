@@ -1,19 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { images } from "../data/data";
 import { Link } from "react-scroll";
 import { ROUTES } from "../constants";
 
 export const MainPage = () => {
+  const [logo, setLogo] = useState("");
+  const [background, setBackground] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 780) {
+        setLogo(images.logo);
+        setBackground(images.background);
+      } else {
+        setLogo(images.logo2x);
+        setBackground(images.background2x);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <section className="main">
       <div className="main__background">
-        <img
-          src={
-            window.innerWidth <= 780 ? images.background : images.background2x
-          }
-          alt=""
-          className="main__background__image"
-        />
+        <img src={background} alt="" className="main__background__image" />
       </div>
       <div className="container">
         <div className="main__wrapper">
@@ -34,11 +49,7 @@ export const MainPage = () => {
             </Link>
           </div>
           <div className="main__logo">
-            <img
-              src={window.innerWidth <= 780 ? images.logo : images.logo2x}
-              alt="Logo"
-              className="main__logo__image"
-            />
+            <img src={logo} alt="Logo" className="main__logo__image" />
           </div>
         </div>
       </div>

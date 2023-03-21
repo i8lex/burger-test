@@ -243,6 +243,7 @@
   padding: 15px 284px;
   margin: 29px 0;
   display: flex;
+  gap: 1013px;
   justify-content: space-between;
   align-items: center;
 }
@@ -282,6 +283,7 @@
   }
   .footer__wrapper {
     padding: 15px 155px;
+    gap: 0;
   }
 }
 @media screen and (max-width: 1080px) {

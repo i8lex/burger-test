@@ -1,11 +1,27 @@
-import React from "react";
-// import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { adress } from "../data/data";
-import logo from "../images/logo_header@2x.png";
+import { adress, images } from "../data/data";
 import { ROUTES } from "../constants";
 
 export const Footer = () => {
+  const [logo, setLogo] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 780) {
+        setLogo(images.logo_header);
+      } else {
+        setLogo(images.logo_header2x);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <footer className="footer">
       <div className="container">
