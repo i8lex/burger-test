@@ -1,8 +1,5 @@
 import React from "react";
-// import logo from "../images/logo@x2.png";
 import { images } from "../data/data";
-// import background from "../images/background@2x.png";
-// import {Link} from "react-router-dom";
 import { Link } from "react-scroll";
 import { ROUTES } from "../constants";
 
